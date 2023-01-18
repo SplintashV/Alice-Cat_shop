@@ -74,7 +74,7 @@
 body {
 	font-family: $font-primary;
 	color: #333;
-	background-color: #fff;
+	background-color: $body-color;
 	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
@@ -101,6 +101,7 @@ body {
     right: 20px;
     bottom: 20px;
     padding: 20px;
+    border-radius: 50%;
     background: $muve-top-background;
     color: $muve-top-color;
     cursor: pointer;
@@ -115,6 +116,15 @@ body {
         top: 47%;
         left: 52%;
         transform: translate(-50%, -50%);
+
+        
+    }
+    &:hover{
+        background: $secondary-color;
+        color: $primary-color;
+    
+           
+           
     }
 }
 
@@ -234,16 +244,19 @@ h6,
 h1,
 .title_1 {
     font-size: 46px;
+    
 }
 
 h2,
 .title_2 {
     font-size: 30px;
+    
 }
 
 h3,
 .title_3 {
     font-size: 20px;
+    
 }
 
 h4,
@@ -259,6 +272,7 @@ h5,
 h6,
 .title_6 {
     font-size: 14px;
+    
 }
 
 
@@ -339,15 +353,19 @@ input:checked+label {
 }
 
 .btn-primary {
-    padding: 11px 29px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #060606;
-    background-color: #fec22d;
+    padding: 11px 39px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $primary-color;
+    background: #FFE167;
+    box-shadow: 0px 10px 15px rgba(255, 225, 103, 0.2);
+    border-radius: 33px;
 
     &:hover {
-        color: #060606;
-        background-color: $secondary-color;
+        color: $primary-color;
+        text-decoration: none;
+        background-color: #FBD32F;
         border-color: $secondary-color;
     }
 }
@@ -390,8 +408,11 @@ input:checked+label {
 .btn-link {
     color: $primary-color;
     background-color: transparent;
+    text-decoration: none;
 
     &:hover {
+        
+        text-decoration: underline;
         color: $primary-color;
     }
 }
@@ -424,7 +445,7 @@ input:checked+label {
     border: 0px solid #f9f9f9;
     border-radius: 5px;
     &:hover {
-        background-color: #41a6f4;
+        background-color: #FFE167;
 
     }
 }

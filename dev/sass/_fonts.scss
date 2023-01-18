@@ -1,43 +1,53 @@
 /* === BEGIN FONTS === */
 
 @font-face {
-    font-family: 'Gilroy-Regular';
-    src: url('./assets/fonts/Gilroy-Regular.woff') format('woff');
-    font-weight: normal; 
+    font-family: 'SF Pro Display';
+    src: url('./assets/fonts/SFProDisplay-Light.woff') format('woff');
+    font-weight: 300; 
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gilroy-Medium';
-    src: url('./assets/fonts/Gilroy-Medium.woff') format('woff');
-    font-weight: normal; 
+    font-family: 'SF Pro Display';
+    src: url('./assets/fonts/SFProDisplay-Regular.woff') format('woff');
+    font-weight: 400; 
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./assets/fonts/SFProDisplay-Medium.woff') format('woff');
+    font-weight: 500; 
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Gilroy-Bold';
-    src: url('./assets/fonts/Gilroy-Bold.woff') format('woff');
-    font-weight: normal; 
+    font-family: 'SF Pro Display';
+    src: url('./assets/fonts/SFProDisplay-Black.woff') format('woff');
+    font-weight: 900; 
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'HeliosLightC';
-    src: url('./assets/fonts/HeliosLightC.woff') format('woff');
-    font-weight: normal; 
+    font-family: 'SF Pro Display';
+    src: url('./assets/fonts/SFProDisplay-Bold.woff') format('woff');
+    font-weight: 700; 
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'HeliosC';
-    src: url('./assets/fonts/HeliosC.woff') format('woff');
-    font-weight: normal; 
+    font-family: 'FoglihtenNo06';
+    src: url('./assets/fonts/FoglihtenNo06_076.otf') format('opentype');
+    font-weight: 500; 
     font-style: normal;
     font-display: swap;
 }
+
 
 /* === END FONTS === */

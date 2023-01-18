@@ -1,15 +1,17 @@
 ///fonts///
-$font-primary: "Open Sans";
-$font-secondary:  "monospace";
+$font-primary: "SF Pro Display";
+$font-secondary:  "FoglihtenNo06";
 $font-size: 16px;
 $section-title: 32px;
 
 ///colors///
-$white: #fff;
-$black: #000;
+$white: rgb(252, 252, 240);
+$black: rgb(0, 0, 0);
 
-$primary-color: #222;
-$secondary-color: #f00;
+$primary-color: rgb(25, 25, 27);
+$secondary-color: #FFE167;
+
+$body-color: rgb(252, 252, 240);
 
 /*grey*/
 $label-red: #F93838;
@@ -32,6 +34,6 @@ $breadcrumbs-last-child: #B2B1B1;
 
 /*   <Muve-top/>   */
 $muve-top-background: $primary-color;
-$muve-top-color: #fff;
+$muve-top-color: $body-color;
 
  
