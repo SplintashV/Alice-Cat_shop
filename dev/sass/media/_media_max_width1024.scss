@@ -1,51 +1,53 @@
 @media screen and (max-width: 1024px) {
-   header{
-        .navbar{
-            
-        &-logo{
-            z-index: 1;
-            margin-left: 0;
-        }
-        &-toggler{
-            z-index: 1;
-        }
+    header {
+        .navbar {
 
-        &-collapse{
-            margin: -120px -12px 0;
-            
-        }
-        &-nav{
-            width: 100%;
-            background: black;
-            padding: 140px 0 24px;
+            &-logo {
+                z-index: 2;
+                margin-left: 0;
+            }
 
-            .nav-item{
-                padding-left: 20px;
+            &-toggler {
+                z-index: 2;
+            }
 
-                .nav-link{
-                    &::before{
-                        left: 18px;
-                        margin-left: 20px;
+            &-collapse {
+                margin: -120px -12px 0;
+                z-index: 1;
+
+            }
+
+            &-nav {
+                width: 100%;
+                background: $primary-color;
+                padding: 140px 0 24px;
+
+                .nav-item {
+                    padding-left: 20px;
+
+                    .nav-link {
+                        &::before {
+                            left: 18px;
+                            margin-left: 20px;
+                        }
                     }
                 }
             }
-        }
-        &-basket{
-            margin-right: 0;
-            top: 18px;
-            right: 51px;
-            position: fixed;
-            z-index: 1;
-            
-            
-        }
-        }
-   } 
-    
-    
-    
 
-    
+            &-basket {
+                margin-right: 0;
+                top: 18px;
+                right: 51px;
+                position: fixed;
+                z-index: 1;
+
+
+            }
+        }
+    }
+
+
+
+
+
 }
-
-
