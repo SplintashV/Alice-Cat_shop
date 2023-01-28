@@ -31,6 +31,11 @@ header {
 				height: 20px;
 				background: url(assets/img/icon-toggler.svg) no-repeat center;
 			}
+            &:hover{
+				box-shadow: 0px 10px 15px rgba(255, 225, 103, 0.2);
+				background-color: #FBD32F;
+
+			}
 		}
         &-nav {
             width: 700px;
@@ -103,7 +108,7 @@ header {
 				left: 8px;
 				height: 17px;
 				width: 16px;
-				background: url(assets/img/icon-bascet.svg);
+				background: url(assets/img/icon-bascet.svg) center no-repeat;
 
 			}
 				

@@ -1,0 +1,39 @@
+.about-product{
+    position: relative;
+    margin-top: 20px;
+    &::before{
+        content: "";
+        position: absolute;
+        height: 251px;
+        width: 405px;
+        top: 0;
+        right: -10px;
+        background: url(assets/img/about-product_back-img.png) center no-repeat;
+
+    }
+
+    &__title {
+        
+        .first-line,
+        .second-line{
+            font-family: $font-secondary;
+            font-weight: 500;
+            font-size: 55px;
+            line-height: 68px;
+            text-transform: uppercase;
+            color: $primary-color;
+        }
+
+        .first-line{
+            width: 530px;
+            padding-left: 120px;
+            font-weight: 500;
+        
+        }
+
+        .second-line{
+            width: 700px;
+            padding-left: 193px;
+        }
+    }
+}
