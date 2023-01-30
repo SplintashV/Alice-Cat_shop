@@ -36,4 +36,13 @@ jQuery(document).ready(function($) {
     if($('.post-item iframe').length){
         $('.post-item iframe').closest('p').addClass('iframe-box')
     }
+
+    $('.about-product__slider').slick({
+        infinite: false,
+        variableWidth: true,
+        speed: 1500,
+        
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
 })

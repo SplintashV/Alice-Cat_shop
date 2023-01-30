@@ -1,21 +1,23 @@
-.about-product{
+.about-product {
     position: relative;
     margin-top: 20px;
-    &::before{
+
+    &::before {
         content: "";
         position: absolute;
         height: 251px;
         width: 405px;
         top: 0;
-        right: -10px;
+        right: -38px;
         background: url(assets/img/about-product_back-img.png) center no-repeat;
 
     }
 
     &__title {
-        
+        margin-top: 100px;
+
         .first-line,
-        .second-line{
+        .second-line {
             font-family: $font-secondary;
             font-weight: 500;
             font-size: 55px;
@@ -24,16 +26,194 @@
             color: $primary-color;
         }
 
-        .first-line{
+        .first-line {
             width: 530px;
             padding-left: 120px;
             font-weight: 500;
-        
+
         }
 
-        .second-line{
+        .title-atr {
+            position: absolute;
+            left: 557px;
+            top: -40px;
+            animation: 20s linear infinite spinner-border;
+
+            img {
+                width: 85px;
+                height: 85px;
+            }
+
+
+        }
+
+        .second-line {
             width: 700px;
             padding-left: 193px;
         }
+
+
+    }
+
+    &__slider {
+        
+        width: 100%;
+        margin-top: 110px;
+        
+
+
+        .slick-list{
+            padding-left: 205px;
+        }
+
+        .img-card {
+            height: 420px;
+            width: 440px;
+            border-radius: 60px;
+            margin-top: 250px;
+            margin-bottom: 50px;
+        }    
+        .text-card {
+            margin-left: 85px;
+            margin-top: 190px;
+
+        }
+
+        .number-card {
+            font-family: $font-secondary;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 31px;
+            text-transform: uppercase;
+            color: #616161;
+            margin-bottom: 15px;
+        }
+
+        .title-card {
+            font-family: $font-secondary;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color: $primary-color;
+            
+            margin-bottom: 25px;
+        }
+
+        .description_card {
+            font-family: $font-primary;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 140%;
+            color: $primary-color;
+            
+            margin-left: 50px;
+        }
+
+        .first-card {
+            width: 1188px;
+            position: relative;
+            
+            .img-card {
+                height: 420px;
+                width: 440px;
+                border-radius: 60px;
+                transform: rotate(-10deg);
+                
+            }
+
+            .title-card{
+                width: 370px;
+            }
+            .description_card{
+                width: 295px;
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                width: 6250px;
+                height: 608px;
+                top: 35px;
+                left: -344px;
+                background: url(assets/img/about-product_back-slider.svg) center/100% no-repeat;
+            }
+
+            
+        }
+
+        .second-card{
+            width: 1188px;
+            .img-card{
+                transform: rotate(10deg);
+            }
+
+            .title-card{
+                width: 370px;
+            }
+
+            .description_card{
+                width: 307px;
+            }
+        }
+
+        .third-card{
+            width: 1188px;
+            .img-card{
+                transform: rotate(-10deg);
+            }
+
+            .title-card{
+                width: 418px;
+            }
+
+            .description_card{
+                width: 354px;
+
+            }
+        }
+
+        .fourth-card{
+            width: 1188px;
+            .img-card{
+                transform: rotate(10deg);
+            }
+
+            .description_card{
+                width: 332px;
+            }
+        }
+
+        .fifth-card{
+            width: 1900px;
+            .img-card{
+                transform: rotate(-10deg);
+            }
+
+            .title-card{
+                width: 418px;
+            }
+
+            .description_card{
+                width: 343px;
+
+            }
+
+            .img_last-card{
+                width: 374px;
+                height: 212px;
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                width:374px ;
+                height:219px ;
+                top: 173px;
+                left: 5884px;
+                background: url(assets/img/about-product_back-slider.png) center/100% no-repeat;
+            }
+        }
+
     }
 }

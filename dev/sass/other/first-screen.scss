@@ -1,10 +1,11 @@
 .first-screen {
 
     height: 1700px;
-    width: 100%;
-    background: url(assets/img/firstscreen-back.png) top/100% no-repeat;
-    margin-top: -135px;
-    padding-top: 200px;
+    max-width: 1920px;
+    background: url(assets/img/firstscreen-back.png) center/cover no-repeat;
+    margin-top: -185px;
+    padding-top: 300px;
+    
 
     &__title {
         color: #FFFCF0;
