@@ -20,22 +20,22 @@
         .second-line {
             font-family: $font-secondary;
             font-weight: 500;
-            font-size: 55px;
+            font-size: 65px;
             line-height: 68px;
             text-transform: uppercase;
             color: $primary-color;
         }
 
         .first-line {
-            width: 530px;
+            width: 610px;
             padding-left: 120px;
-            font-weight: 500;
+            
 
         }
 
         .title-atr {
             position: absolute;
-            left: 557px;
+            left: 615px;
             top: -40px;
             animation: 20s linear infinite spinner-border;
 
@@ -48,7 +48,7 @@
         }
 
         .second-line {
-            width: 700px;
+            width: 789px;
             padding-left: 193px;
         }
 
@@ -59,6 +59,37 @@
         
         width: 100%;
         margin-top: 110px;
+        margin-bottom: 70px;
+
+        .slick-arrow{
+            position: absolute;
+            top: 720px;
+            
+            width: 20px;
+            height: 20px;
+            border: none;
+            border-bottom: 1px dashed $primary-color;
+            border-right: 1px dashed $primary-color;
+            transform: rotate(135deg);
+            font-size: 0;
+            background: none;
+
+            &:hover{
+                opacity: 0.5;
+            }
+
+
+            &.slick-prev{
+                left: 45%;
+            }
+            &.slick-next{
+                left: 55%;
+                transform: rotate(-45deg);
+                
+            } 
+            
+            
+        }
         
 
 
@@ -111,17 +142,16 @@
         }
 
         .first-card {
-            width: 1188px;
+            max-width: 1188px;
             position: relative;
-            
-            .img-card {
-                height: 420px;
-                width: 440px;
-                border-radius: 60px;
-                transform: rotate(-10deg);
-                
-            }
+            width:100%;
 
+            .img-card{
+                transform: rotate(-10deg);
+            }
+        
+            
+            
             .title-card{
                 width: 370px;
             }
@@ -130,6 +160,7 @@
             }
 
             &::before{
+                z-index: -1;
                 content: "";
                 position: absolute;
                 width: 6250px;

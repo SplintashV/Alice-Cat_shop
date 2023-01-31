@@ -40,9 +40,9 @@ jQuery(document).ready(function($) {
     $('.about-product__slider').slick({
         infinite: false,
         variableWidth: true,
-        speed: 1500,
+        speed: 2000,
         
-        autoplay: true,
-        autoplaySpeed: 3000
+       // autoplay: true,
+        // autoplaySpeed: 6000
     });
 })
