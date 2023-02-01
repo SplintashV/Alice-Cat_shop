@@ -1,0 +1,46 @@
+.equipment{
+
+    margin-top: 150px;
+    .equipment__title{
+        position: relative;
+        max-width: 650px;
+        font-family: $font-secondary;
+        font-weight: 500;
+        font-size: 54px;
+        line-height: 68px;
+        margin: 80px auto;
+        text-transform: uppercase;
+        color: $primary-color;
+
+
+        &::before{
+            content: "Что входит в набор?";
+            position: absolute;
+            font-family: $font-primary; 
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: none;
+            width: 177px;
+            bottom: 65px;
+            left: 147px;
+        }
+        &::after{
+            content: "И почему мы любим то, что создаем";
+            position: absolute;
+            font-family: $font-primary; 
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: none;
+            width: 315px;
+            top: 55px;
+            right: 81px;
+
+        }
+    }
+
+    &__tablet{
+        justify-content: space-between;
+    }
+}

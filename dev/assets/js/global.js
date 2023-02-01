@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
         variableWidth: true,
         speed: 2000,
         
-       // autoplay: true,
-        // autoplaySpeed: 6000
+        autoplay: true,
+        autoplaySpeed: 6000
     });
 })
