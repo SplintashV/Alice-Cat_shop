@@ -1,7 +1,7 @@
 .equipment{
 
     margin-top: 150px;
-    .equipment__title{
+    &__title{
         position: relative;
         max-width: 650px;
         font-family: $font-secondary;
@@ -42,5 +42,49 @@
 
     &__tablet{
         justify-content: space-between;
+        margin-bottom: 46px;
+        
+        .equipment-item{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            
+            &__title{
+                margin: 10px auto 50px;
+                
+                
+            }
+
+            &__img{
+                position: relative;
+                bottom: 102px;
+            }
+
+            &__description{
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 140%;
+                font-family: $font-primary;
+                color: $primary-color;
+                text-align: center;
+                margin-top: -70px;
+            }
+
+        }
+    }
+
+    .btn-primary{
+        padding: 15.5px 40px;
+        font-family: $font-primary;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $primary-color;
+        margin: 0 auto;
+        max-width: 152px;
+        
+        display: block;
+        text-align: center;
     }
 }
