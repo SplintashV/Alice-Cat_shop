@@ -45,4 +45,21 @@ jQuery(document).ready(function($) {
         autoplay: true,
         autoplaySpeed: 6000
     });
+
+    (function(d) {
+        const a = d.querySelectorAll('[data-bs-target]');
+    
+        a.forEach(t => {
+            t.addEventListener('click', e => {
+                const b = d.querySelectorAll('.modal');
+    
+                b.forEach(i => {
+                    i.classList.remove('show');
+                    d.getElementById(e.target.dataset.modal).classList.add('show');
+                })
+            })
+        })
+    })(document);
+   
+    
 })
