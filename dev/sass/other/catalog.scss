@@ -29,6 +29,14 @@
                 font-weight: 300;
                 font-size: 22px;
                 line-height: 24px;
+                &:hover{
+                    color: #adadad ;
+                    background: none;
+                    border: none;
+                    
+
+                }
+
                 &.active{
                     color: $white ;
                     background: none;
@@ -39,12 +47,19 @@
             }
         }
 
-        .tab-content{
-            .product-img{
-                width: 260px;
-                height: 260px;
+        .tab-content{ 
+            max-width: 1250px;
+            margin: 0 auto;
+
+            .product-item{  
+                height: 455px;
                 margin-bottom: 20px;
             }
+               
+            .product-img{
+                margin-bottom: 20px;
+            }
+            
             .product-title{
                 font-family:$font-secondary ;
                 font-weight: 500;

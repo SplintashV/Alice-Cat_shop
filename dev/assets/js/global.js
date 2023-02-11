@@ -60,6 +60,11 @@ jQuery(document).ready(function($) {
             })
         })
     })(document);
+
+    $('#basketModal').click(() => {
+        $('#exampleModal').modal('hide'); 
+    })
    
+    
     
 })

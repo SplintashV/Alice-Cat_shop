@@ -333,11 +333,83 @@
             width: 117px;
         }
 
-        &-border-bottom{
-           // background-size: 100%;
+        &-border-bottom {
+            // background-size: 100%;
             margin: 10px 0 -5px;
             height: 55px;
         }
-        
+
+    }
+
+    .catalog {
+        &__title {
+            padding-top: 25px;
+            font-size: 25px;
+            line-height: 32px;
+            margin-bottom: 10px;
+        }
+
+        &__tabs {
+            .nav-tabs {
+                width: 320px;
+                border-bottom: none;
+                padding-right: 20px;
+                margin-bottom: 10px;
+
+
+                .nav-link {
+                    font-size: 12px;
+                    line-height: 14px;
+                    width: 300px;
+                    margin-bottom: 10px;
+                    &.active {
+                        width: 50%;
+                    }
+                    
+                }
+
+
+            }
+
+            .tab-content{
+                padding-left: 20px;
+                .product-item{
+                    height: 255px;
+                    margin-bottom: 20px;
+                    margin-right: 10px;
+                    max-width: 140px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    
+                }
+                .product-img{
+                    height: 140px;
+                    width: 140px;
+                    margin-bottom: 10px;
+                }
+
+                .product-title{
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 4px;
+                }
+
+                .product-descriptions{
+                    font-size: 8px;
+                    line-height: 10px;
+                    max-width: 140px;
+                    margin-bottom: 20px;
+                }
+
+                .btn-primary{
+                    font-size: 11.2px;
+                    line-height: 13px;
+                    padding: 9px 22px;
+                }
+            }
+
+
+
+        }
     }
 }
