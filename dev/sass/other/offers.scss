@@ -1,0 +1,204 @@
+.offers {
+    background: $primary-color;
+    padding-top: 80px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -282px;
+        width: 2268px;
+        height: 411px;
+        background: url(assets/img/offers_before.svg) center repeat-x;
+    }
+
+    &__title {
+        font-family: $font-secondary;
+        font-weight: 500;
+        font-size: 54px;
+        line-height: 68px;
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 666px;
+        color: $white;
+        margin: 0 auto 105px;
+
+    }
+
+    &__items {
+        margin: 0 auto;
+        max-width: 1050px;
+
+        .col-lg-4{
+            padding: 0;
+        }
+
+        .first-card,
+        .second-card,
+        .third-card,
+        .fourth-card {
+            color: $white;
+            padding: 30px;
+            border-radius: 10px;
+
+            .card-title {
+                color: $white;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 31px;
+                text-transform: uppercase;
+                font-family: $font-secondary;
+
+
+
+            }
+
+            .card-descriptions {
+                font-family: $font-primary;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .card-link {
+                font-family: $font-primary;
+                color: $white;
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 1px;
+                    background-color: $secondary-color;
+                    bottom: -4px;
+                    left: 0;
+                    transition: 1.5s;
+                }
+
+
+            }
+
+            &:hover {
+                background-size: 120%;
+
+                .card-link {
+                    color: $secondary-color;
+
+                    &::after {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+
+        .first-card {
+            width: 360px;
+            height: 479px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(assets/img/offers__first-card-back.png) center no-repeat;
+            background-size: 100%;
+            transition: 2.5s;
+            margin-right: 40px;
+
+            .card-descriptions {
+                max-width: 176px;
+                margin-bottom: 324px;
+            }
+
+        }
+
+        .second-card {
+            width: 260px;
+            height: 478px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(assets/img/offers__second-card-back.png) center no-repeat;
+            background-size: 130%;
+            transition: 2.5s;
+            margin-right: 40px;
+
+            &:hover {
+                background-size: 150%;
+            }
+
+            .card-descriptions {
+                max-width: 170px;
+                margin-bottom: 324px;
+            }
+
+
+
+        }
+
+        .third-card {
+            width: 260px;
+            height: 224px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(assets/img/offers__third-card-back.png) center no-repeat;
+            background-size: 100%;
+            transition: 2.5s;
+            margin-bottom: 30px;
+            
+
+            .card-descriptions {
+                max-width: 153px;
+                margin-bottom: 70px;
+            }
+
+        }
+
+        .fourth-card {
+            width: 260px;
+            height: 224px;
+            background: url(assets/img/offers__fourth-card-back.png) center no-repeat,
+                $white;
+            background-size: 100%;
+            transition: 2.5s;
+
+
+
+            .card-title {
+                color: $primary-color;
+                max-width: 251px;
+
+            }
+
+            .card-descriptions {
+                color: $primary-color;
+                max-width: 201px;
+                margin-bottom: 38px;
+            }
+
+            .card-link {
+                color: $primary-color;
+                
+
+            
+            }
+
+            &:hover{
+                .card-link{
+                    color: $primary-color;
+                    &::after{
+                        background-color: $primary-color;
+                        
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+
+
+
+
+}
