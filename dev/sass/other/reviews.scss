@@ -1,0 +1,142 @@
+.reviews{
+    margin-top: -212px;
+    
+
+    &__img-back{
+        position: relative;
+        z-index: -1;
+        top: 391px;
+        right: 71px;
+        
+    }   
+    
+
+    &__title{
+        margin: 0 auto;
+        max-width: 615px;
+        
+
+        h2{
+            font-family: $font-secondary;
+            font-weight: 500;
+            font-size: 54px;
+            line-height: 68px;
+            
+            text-transform: uppercase;
+            color: $primary-color;
+        }
+        .first-row{
+            padding-right: 180px;
+        }
+        .second-row{
+            padding-left: 180px;
+            position: relative;
+            
+            
+        }
+
+        img.title-atr{
+            position: relative;
+            left: 480px;
+            bottom: 195px;
+            animation: 20s linear infinite spinner-border;
+
+            
+            
+        }
+
+    }
+    &__items{
+        max-width: 1200px;
+        height: 412px;
+        overflow: hidden;
+        margin: 0 auto;
+
+        .rewiews__item{
+           width: fit-content;
+           margin: 0 auto;
+           position: relative;
+           
+           
+           .rewiews__text{
+            border-radius: 32px;
+            background-color: white;
+            padding: 10px 20px;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            font-family: $font-primary;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+            position: relative;
+           }
+           &.first{
+            
+            .rewiews__text{
+                max-width: 204px;
+                border-bottom-right-radius: 0px;
+                border-top-right-radius: 19px;
+                bottom: 320px;
+            }
+           }
+           &.second{
+            
+            top: 100px;
+            right: 252px;
+            .rewiews__text{
+                max-width: 195px;
+                border-bottom-right-radius: 0px;
+                border-top-right-radius: 19px;
+                bottom: 120px;
+                right: 85px;
+            }
+           }
+           &.third{
+            right: 555px;
+            
+            .rewiews__text{
+                max-width: 176px;
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 19px;
+                bottom: 162px;
+                left: 176px;
+            }
+           }
+
+           &.fourth{
+            bottom: 312px;
+            left: 463px;
+            
+            .rewiews__text{
+                max-width: 210px;
+                border-bottom-right-radius: 0px;
+                border-top-right-radius: 19px;
+                bottom: 88px;
+                left: 123px;
+            }
+           }
+           &.fifth{
+            bottom: 428px;
+            left: 211px;
+            .rewiews__text{
+                max-width: 255px;
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 19px;
+                bottom: 271px;
+                left: 123px;
+            }
+           }
+           &.sixth{
+            bottom: 384px;
+            left: 4px;
+            .rewiews__text{
+                max-width: 187px;
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 19px;
+                bottom: 124px;
+                left: 123px;
+            }
+           }
+
+        }
+    }
+}   

@@ -2,6 +2,7 @@
     background: $primary-color;
     padding-top: 80px;
     position: relative;
+    padding-bottom: 250px;
 
     &::before {
         content: "";
@@ -11,6 +12,17 @@
         width: 2268px;
         height: 411px;
         background: url(assets/img/offers_before.svg) center repeat-x;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        height: 560px;
+        width: 1905px;
+        background: url(assets/img/video-instruction_frame.png) center/cover no-repeat;
+        background-size: 100%;
+        bottom: -346px;
+        left: 0;
+        
     }
 
     &__title {
@@ -157,7 +169,7 @@
             width: 260px;
             height: 224px;
             background: url(assets/img/offers__fourth-card-back.png) center no-repeat,
-                $white;
+                white;
             background-size: 100%;
             transition: 2.5s;
 

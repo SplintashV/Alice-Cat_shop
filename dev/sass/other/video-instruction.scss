@@ -1,0 +1,59 @@
+.video-instruction{
+    width: 1200px;
+    padding-top: 215px;
+    margin: -50px auto 0;
+    position: relative;
+
+    
+    &__title{
+        font-family: $font-secondary;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+        text-transform: uppercase;
+        color: $primary-color;
+        position: relative;
+        margin-bottom: 20px;
+        max-width: 334px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            height: 151px;
+            width: 116px;
+            background: url(assets/img/video-instruction_title-atr.png) center no-repeat;
+            background-size: 100%;
+            bottom: 0px;
+            left: 281px;
+        }
+    }
+
+    &__description{
+        margin-left: 60px;
+        max-width: 317px;
+
+    }
+    iframe{
+        border-radius: 30px;
+        
+    }
+
+    .video{
+        img{
+
+        }
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            height: 51px;
+            width: 53px;
+            background: url(assets/img/btn_play.svg) center no-repeat;
+            top: -21px;
+            left: 238px;
+            
+
+            
+        }
+    }
+}

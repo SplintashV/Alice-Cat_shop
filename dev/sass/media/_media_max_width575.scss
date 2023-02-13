@@ -412,4 +412,103 @@
 
         }
     }
+
+    .offers{
+        padding-top: 60px;
+        padding-bottom: 121px;
+        &::before{
+            width: 570px;
+            height: 91px;
+            background-size: 100%;
+            left: -138px;
+            top: 59px;
+        }
+        &::after{
+            width: 320px;
+            bottom: -237px;
+            
+        }
+        &__title{
+            font-size: 25px;
+            line-height: 32px;
+            margin-bottom: 31px;
+        }
+
+        .first-card,
+        .second-card,
+        .third-card,
+        .fourth-card {
+            width: 300px;
+            height: 175px;
+            margin-bottom: 20px;
+            padding: 20px;
+
+            .card-descriptions{
+                font-size: 12px;
+                margin-bottom: 29px;
+            }
+
+            .card-link{
+                font-size: 8px;
+                line-height: 10px;
+                margin-left: 200px;
+                padding: 21px 6px;;
+                color: $primary-color;
+                border-radius: 50%;
+                background-color: $secondary-color;
+            }
+        }
+
+        .fourth-card{
+            background: url(assets/img/offers__fourth-card-back_phone.png) center no-repeat,white;
+            background-size: 100%;
+            .card-descriptions{
+                margin-bottom: 0;
+            }
+            .card-link{
+                margin-top: -10px;
+                background-color: $white;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+                
+            }
+        }
+
+
+    }
+
+    .video-instruction{
+        padding-top: 65px;
+
+        &__title{
+            font-size: 18px;
+            line-height: 23px;
+            max-width: 243px;
+
+            &::before{
+                width: 86px;
+                height: 113px;
+                left: 200px;
+            }
+        }
+
+        &__description{
+            font-size: 12px;
+            line-height: 14px;
+            max-width: 300px;
+            margin-left: 0;
+        }
+
+        .video{
+            img{
+                width: 300px;
+                height: 170px;
+
+                
+            }
+
+            &::before{
+                    left: 118px;
+                }
+        }
+    }
 }
