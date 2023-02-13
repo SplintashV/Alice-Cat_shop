@@ -1,18 +1,18 @@
 .reviews{
-    margin-top: -212px;
+    
     
 
     &__img-back{
         position: relative;
         z-index: -1;
-        top: 391px;
+        top: 105px;
         right: 71px;
         
     }   
     
 
     &__title{
-        margin: 0 auto;
+        margin: -250px auto 0;
         max-width: 615px;
         
 
@@ -137,6 +137,40 @@
             }
            }
 
+        }
+    }
+    &__buttons{
+        max-width: 500px;
+        margin: 15px auto;
+
+        .btn-primary{
+            margin-right: 40px;
+            
+        }
+
+        .btn-link{
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 1px;
+                background-color: $primary-color;
+                bottom: 3px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                transition: .8s;
+                
+            }
+
+            &:hover{
+                text-decoration: none;
+                &::after{
+                    width: 80%;
+                }
+
+            }
         }
     }
 }   
