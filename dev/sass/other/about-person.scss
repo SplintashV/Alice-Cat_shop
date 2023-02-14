@@ -1,0 +1,76 @@
+.about-person{
+    background: $primary-color;
+    padding-top: 200px;
+    .container{
+        max-width: 1200px;
+    }
+    &__title{
+        margin: 0 auto 25px;
+        max-width: 615px;
+        position: relative;
+        &::before{
+            position:absolute;
+            content: "";
+            height: 75px;
+            width: 143px;
+            bottom: 72px;
+            left: 437px;
+            background: url(assets/img/about-person__title-atr.svg) center no-repeat;
+        }
+        
+
+        h2{
+            font-family: $font-secondary;
+            font-weight: 500;
+            font-size: 54px;
+            line-height: 68px;
+            
+            text-transform: uppercase;
+            color: $white;
+        }
+        .first-row{
+            padding-right: 180px;
+        }
+        .second-row{
+            padding-left: 270px;
+            position: relative;
+            
+            
+        }
+    }
+
+    .person-photo{
+        padding-left: 40px;
+    }
+
+    .person-photo-atr{
+        position: relative;
+        bottom: 82px;
+        left: 362px;
+    } 
+    
+    .about-person__text{
+        p{
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 140%;
+            color: $white;
+        }
+
+        .social-links{
+            background: $white;
+            border-radius: 45px;
+            padding: 10px 30px ;
+            display: flex;
+            flex-direction: row;
+            
+            .links{
+                margin-left: auto;
+            }
+        }
+    }
+
+}    
+    
