@@ -104,6 +104,8 @@
 
             .title-atr {
                 left: 227px;
+                width: 66px;
+
             }
 
             .second-line {
@@ -362,46 +364,49 @@
                     line-height: 14px;
                     width: 300px;
                     margin-bottom: 10px;
+
                     &.active {
                         width: 50%;
                     }
-                    
+
                 }
 
 
             }
 
-            .tab-content{
+            .tab-content {
                 padding-left: 20px;
-                .product-item{
+
+                .product-item {
                     height: 255px;
                     margin-bottom: 20px;
                     margin-right: 10px;
                     max-width: 140px;
                     padding-left: 0;
                     padding-right: 0;
-                    
+
                 }
-                .product-img{
+
+                .product-img {
                     height: 140px;
                     width: 140px;
                     margin-bottom: 10px;
                 }
 
-                .product-title{
+                .product-title {
                     font-size: 16px;
                     line-height: 20px;
                     margin-bottom: 4px;
                 }
 
-                .product-descriptions{
+                .product-descriptions {
                     font-size: 8px;
                     line-height: 10px;
                     max-width: 140px;
                     margin-bottom: 20px;
                 }
 
-                .btn-primary{
+                .btn-primary {
                     font-size: 11.2px;
                     line-height: 13px;
                     padding: 9px 22px;
@@ -413,22 +418,25 @@
         }
     }
 
-    .offers{
+    .offers {
         padding-top: 60px;
         padding-bottom: 121px;
-        &::before{
+
+        &::before {
             width: 570px;
             height: 91px;
             background-size: 100%;
             left: -138px;
             top: 59px;
         }
-        &::after{
+
+        &::after {
             width: 320px;
             bottom: -237px;
-            
+
         }
-        &__title{
+
+        &__title {
             font-size: 25px;
             line-height: 32px;
             margin-bottom: 31px;
@@ -443,72 +451,291 @@
             margin-bottom: 20px;
             padding: 20px;
 
-            .card-descriptions{
+            .card-descriptions {
                 font-size: 12px;
                 margin-bottom: 29px;
             }
 
-            .card-link{
+            .card-link {
                 font-size: 8px;
                 line-height: 10px;
                 margin-left: 200px;
-                padding: 21px 6px;;
+                padding: 21px 6px;
+                ;
                 color: $primary-color;
                 border-radius: 50%;
                 background-color: $secondary-color;
             }
         }
 
-        .fourth-card{
-            background: url(assets/img/offers__fourth-card-back_phone.png) center no-repeat,white;
+        .fourth-card {
+            background: url(assets/img/offers__fourth-card-back_phone.png) center no-repeat, white;
             background-size: 100%;
-            .card-descriptions{
+
+            .card-descriptions {
                 margin-bottom: 0;
             }
-            .card-link{
+
+            .card-link {
                 margin-top: -10px;
                 background-color: $white;
                 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-                
+
             }
         }
 
 
     }
 
-    .video-instruction{
+    .video-instruction {
         padding-top: 65px;
 
-        &__title{
+        &__title {
             font-size: 18px;
             line-height: 23px;
             max-width: 243px;
 
-            &::before{
+            &::before {
                 width: 86px;
                 height: 113px;
                 left: 200px;
             }
         }
 
-        &__description{
+        &__description {
             font-size: 12px;
             line-height: 14px;
             max-width: 300px;
             margin-left: 0;
         }
 
-        .video{
-            img{
+        .video {
+            img {
                 width: 300px;
                 height: 170px;
 
-                
+
             }
 
-            &::before{
-                    left: 118px;
+            &::before {
+                left: 118px;
+            }
+        }
+    }
+
+    .reviews {
+
+        &__img-back {
+            display: none;
+        }
+
+        &__title {
+            margin-bottom: -70px;
+            margin-top: 40px;
+
+            h2 {
+                font-size: 25px;
+                line-height: 32px;
+            }
+
+            .first-row {
+                padding: 0;
+
+            }
+
+            .second-row {
+                padding-left: 85px;
+            }
+
+            img.title-atr {
+                left: 200px;
+                bottom: 121px;
+                width: 66px;
+            }
+        }
+
+        &__items {
+            max-width: 300px;
+            height: 525px;
+
+            .reviews__item {
+                margin: 0;
+
+                img {
+                    width: 200px;
                 }
+
+                .reviews__text {
+                    font-size: 10px;
+                    line-height: 12px;
+                    padding: 6px 20px;
+                    z-index: 1;
+                }
+
+                &.first {
+                    right: 15px;
+
+                    .reviews__text {
+                        width: 180px;
+                        bottom: 190px;
+                        left: 30px;
+                    }
+                }
+
+                &.second {
+                    top: -267px;
+                    right: -115px;
+
+                    .reviews__text {
+                        width: 160px;
+                        bottom: 119px;
+                        right: -2px;
+                    }
+                }
+
+                &.third {
+                    right: 12px;
+                    bottom: 400px;
+
+                    .reviews__text {
+                        width: 155px;
+                        bottom: 140px;
+                        left: 35px;
+                    }
+                }
+
+                &.fourth {
+                    bottom: 604px;
+                    left: 109px;
+
+                    .reviews__text {
+                        width: 179px;
+                        bottom: 78px;
+                        left: -9px;
+                    }
+                }
+
+                &.fifth {
+                    bottom: 701px;
+                    left: -22px;
+
+                    .reviews__text {
+                        bottom: 167px;
+                        left: 55px;
+                        width: 189px;
+                    }
+                }
+
+                &.sixth {
+                    bottom: 950px;
+                    left: 107px;
+
+                    .reviews__text {
+                        bottom: 75px;
+                        left: 27px;
+                        width: 138px;
+                    }
+                }
+
+            }
+
+        }
+
+        &__buttons {
+            margin: 0;
+
+            .btn-primary {
+                margin-right: 5px;
+                font-size: 12px;
+                line-height: 14px;
+                padding: 11px 30px;
+
+            }
+
+            .btn-link {
+
+                display: none;
+
+                &.mobile {
+                    display: inline-block;
+                    width: 50px;
+                    font-size: 12px;
+                    line-height: 14px;
+                    text-decoration: underline;
+
+
+
+                }
+            }
+
+        }
+    }
+
+    .about-person {
+        padding-top: 50px;
+
+        &__title {
+            h2 {
+                font-size: 25px;
+                line-height: 32px;
+            }
+
+            .first-row {
+                padding-right: 0;
+                padding-left: 20px;
+
+            }
+
+            .second-row {
+                padding-left: 140px;
+            }
+
+            &::before {
+                background-size: 100%;
+                width: 82px;
+                bottom: 19px;
+                left: 218px;
+            }
+        }
+
+        &__img {
+            height: 295px;
+
+            .person-photo {
+                padding-left: 0;
+                transform: rotate(-5.3deg);
+                padding-right: 40px;
+            }
+
+            .person-photo-atr {
+                bottom: 258px;
+                left: 191px;
+                width: 125px;
+
+            }
+        }
+
+        &__text {
+            p {
+                font-size: 12px;
+            }
+
+            .social-links {
+                &__title {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+
+                .links {
+                    a {
+                        img {
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+
+            }
         }
     }
 }

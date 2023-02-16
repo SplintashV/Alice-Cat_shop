@@ -54,13 +54,13 @@
         overflow: hidden;
         margin: 0 auto;
 
-        .rewiews__item{
+        .reviews__item{
            width: fit-content;
            margin: 0 auto;
            position: relative;
            
            
-           .rewiews__text{
+           .reviews__text{
             border-radius: 32px;
             background-color: white;
             padding: 10px 20px;
@@ -73,7 +73,7 @@
            }
            &.first{
             
-            .rewiews__text{
+            .reviews__text{
                 max-width: 204px;
                 border-bottom-right-radius: 0px;
                 border-top-right-radius: 19px;
@@ -84,7 +84,7 @@
             
             top: 100px;
             right: 252px;
-            .rewiews__text{
+            .reviews__text{
                 max-width: 195px;
                 border-bottom-right-radius: 0px;
                 border-top-right-radius: 19px;
@@ -95,7 +95,7 @@
            &.third{
             right: 555px;
             
-            .rewiews__text{
+            .reviews__text{
                 max-width: 176px;
                 border-bottom-left-radius: 0px;
                 border-top-left-radius: 19px;
@@ -108,7 +108,7 @@
             bottom: 312px;
             left: 463px;
             
-            .rewiews__text{
+            .reviews__text{
                 max-width: 210px;
                 border-bottom-right-radius: 0px;
                 border-top-right-radius: 19px;
@@ -119,7 +119,7 @@
            &.fifth{
             bottom: 428px;
             left: 211px;
-            .rewiews__text{
+            .reviews__text{
                 max-width: 255px;
                 border-bottom-left-radius: 0px;
                 border-top-left-radius: 19px;
@@ -130,7 +130,7 @@
            &.sixth{
             bottom: 384px;
             left: 4px;
-            .rewiews__text{
+            .reviews__text{
                 max-width: 187px;
                 border-bottom-left-radius: 0px;
                 border-top-left-radius: 19px;
@@ -152,6 +152,10 @@
 
         .btn-link{
             position: relative;
+
+            &.mobile{
+                display: none;
+            }
 
             &::after {
                 content: "";

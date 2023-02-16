@@ -1,5 +1,5 @@
 .about-person{
-    background: $primary-color;
+    background: url(assets/img/about-person-back.png) top/cover no-repeat;
     padding-top: 200px;
     .container{
         max-width: 1200px;
@@ -49,7 +49,8 @@
         left: 362px;
     } 
     
-    .about-person__text{
+    &__text{
+        
         p{
             font-family: 'SF Pro Display';
             font-style: normal;
@@ -57,17 +58,33 @@
             font-size: 16px;
             line-height: 140%;
             color: $white;
+            margin-bottom: 25px;
         }
 
         .social-links{
             background: $white;
             border-radius: 45px;
-            padding: 10px 30px ;
+            padding: 15px 30px ;
             display: flex;
             flex-direction: row;
-            
+            align-items: center;
+            &__title{
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 18px;
+                color: $primary-color;
+            }
             .links{
                 margin-left: auto;
+
+                a{
+                    margin: 3px;
+                    text-decoration: none;
+                    
+                    
+                    
+                }
+                    
             }
         }
     }
