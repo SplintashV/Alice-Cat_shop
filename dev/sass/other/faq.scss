@@ -1,0 +1,150 @@
+.faq {
+    background: $primary-color;
+
+    &__title {
+        text-align: center;
+        color: $white;
+        font-family: $font-secondary;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 68px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    .accordion {
+        margin: 0 auto 100px;
+        max-width: 1400px;
+        &-item {
+            background: none;
+            border: 1px dashed rgba(255, 255, 255, 0);
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            border-radius: 0;
+            background-color: #19191B;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23616161FF' stroke-width='4' stroke-dasharray='10%2c 14' stroke-dashoffset='62' stroke-linecap='square'/%3e%3c/svg%3e");
+
+            &:last-child {
+                border-bottom: 1px dashed rgba(255, 255, 255, 0);
+            }
+        }
+
+
+        &-button {
+            background: $primary-color;
+            color: $white;
+            font-family: $font-primary;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+
+            &::after {
+                background: url(assets/img/accordion-icon.svg) center no-repeat;
+                background-size: 100%;
+            }
+
+            &:not(.collapsed) {
+                box-shadow: none;
+
+                &::after {
+                    background: url(assets/img/accordion-icon.svg) center no-repeat;
+                    transform: rotate(45deg);
+
+                }
+            }
+
+            //&:hover{
+            //    background-color: #2b2b2c48;
+            //}
+            &:focus {
+                border-color: $secondary-color;
+                box-shadow: none
+            }
+        }
+
+        &-body {
+            background: $primary-color;
+            color: $white;
+            font-family: $font-primary;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 140%;
+
+
+        }
+
+    }
+
+    &-form {
+        
+        &__title {
+            font-family: $font-secondary;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color: $white;
+            margin-left: 200px;
+            margin-bottom: 20px;
+
+            &-atr {
+                max-width: 219px;
+                font-family: $font-primary;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 140%;
+                color: $white;
+                margin-left: 325px;
+                margin-bottom: 40px;
+
+
+            }
+        }
+
+        .form-row {
+            height: 100px;
+            padding-left: 11vh;
+            margin: 0 auto;
+
+            input {
+                width: 100%;
+                border-radius: 30px;
+                border: 1px solid #BEBEBE;
+                font-size: 16px;
+                padding: 11px 20px;
+                margin: 3px;
+            }
+
+            .form-control {
+                border-radius: 30px;
+                padding: 11px 20px;
+                margin: 3px;
+            }
+            .btn-primary{
+                font-family: $font-primary;          
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 32px;
+                text-align: center;
+                color: $primary-color;
+                width: 140px;
+                padding: 7px 20px;
+                margin-left: 75px;
+            }
+            .btn-atr {
+                font-family: $font-primary;
+                font-weight: 300;
+                font-size: 10px;
+                line-height: 15px;
+                text-align: right;
+                color: $white;
+                margin-top: 10px;
+                max-width: 217px;
+                opacity: 0.8;
+            }
+
+        }
+    }
+
+}
