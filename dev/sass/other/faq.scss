@@ -1,6 +1,6 @@
 .faq {
     background: $primary-color;
-
+    
     &__title {
         text-align: center;
         color: $white;
@@ -14,7 +14,7 @@
 
     .accordion {
         margin: 0 auto 100px;
-        max-width: 1400px;
+        
         &-item {
             background: none;
             border: 1px dashed rgba(255, 255, 255, 0);
@@ -103,10 +103,10 @@
         }
 
         .form-row {
-            height: 100px;
-            padding-left: 11vh;
-            margin: 0 auto;
-
+            display: flex;
+            justify-content: space-around;
+            
+            padding-right: 2rem;
             input {
                 width: 100%;
                 border-radius: 30px;
@@ -130,7 +130,7 @@
                 color: $primary-color;
                 width: 140px;
                 padding: 7px 20px;
-                margin-left: 75px;
+                
             }
             .btn-atr {
                 font-family: $font-primary;
@@ -140,6 +140,7 @@
                 text-align: right;
                 color: $white;
                 margin-top: 10px;
+                margin-left: -75px;
                 max-width: 217px;
                 opacity: 0.8;
             }

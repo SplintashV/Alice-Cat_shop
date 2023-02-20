@@ -381,14 +381,18 @@ input:checked+label {
 }
 
 .btn-success {
-    color: $primary-color;
+    color: $white;
     background-color: transparent;
-    border: 2px solid transparent;
-    border-color: $primary-color;
+    border: 1px solid #FFFCF0;
+    border-radius: 33px;    
+    border-color: $white;
 
     &:hover {
-        background-color: #41a6f4;
-        border-color: #41a6f4;
+        color: #FFE167;
+        border: 1px solid #FFE167;
+        background-color: transparent;
+    
+        
     }
 }
 

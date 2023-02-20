@@ -1,7 +1,120 @@
-footer{
-  height: 100px;
-  background: $primary-color;
-  margin-top: auto;
-}
+.footer {
+    background: $primary-color;
+    padding-top: 75px;
+    padding-bottom: 20px;
 
- 
+    &__items {
+        background: $white;
+        border-radius: 30px;
+        height: 330px;
+        padding: 60px;
+
+        .footer__navbar {
+
+            &-title {
+                font-family: $font-secondary;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 31px;
+                text-transform: uppercase;
+                color: $primary-color;
+            }
+
+            .navbar-items {
+                display: flex;
+                flex-direction: row;
+
+                ul {
+                    li.nav-item {
+                        padding-left: 0;
+
+                        .nav-link {
+                            padding: 0;
+                            color: $primary-color;
+                            font-family: $font-primary;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 140%;
+
+
+
+                        }
+
+                        &::before {
+                            display: none;
+                        }
+
+
+
+                    }
+
+
+                }
+            }
+
+
+        }
+
+        .product-logo {
+            margin-top: -100px;
+        }
+
+        .footer__contacts {
+            font-family: $font-primary;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 48px;
+            text-align: right;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+            padding-top: 40px;
+
+        }
+
+        .legal-info {
+
+            font-family: $font-primary;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 22px;
+            color: $primary-color;
+            text-align: start;
+            margin-top: 58px;
+
+
+            ul {
+                li {
+                    a {
+                        text-decoration: none;
+                    }
+
+                    padding-left: 0;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            a{
+              margin: 3px;
+              text-decoration: none;
+              
+              
+              
+          }
+        }
+    }
+
+
+
+
+}

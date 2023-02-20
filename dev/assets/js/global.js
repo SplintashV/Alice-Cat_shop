@@ -46,6 +46,22 @@ jQuery(document).ready(function($) {
         autoplaySpeed: 6000
     });
 
+    $('.product__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.product__slider-nav'
+    });
+    $('.product__slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product__slider',
+        arrows: true,
+        centerMode: false,
+        focusOnSelect: true
+    });
+
     (function(d) {
         const a = d.querySelectorAll('[data-bs-target]');
     
@@ -65,6 +81,9 @@ jQuery(document).ready(function($) {
         $('#exampleModal').modal('hide'); 
     })
    
-    
+    $(".show-more-btn").click(function(e){
+        $(".show-more-item:hidden").slice(0,4).fadeIn();
+        if ($(".show-more-item:hidden").length < 1) $(this).fadeOut();
+      })
     
 })
