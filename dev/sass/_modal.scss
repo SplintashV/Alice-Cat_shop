@@ -8,25 +8,41 @@
 
 
 .modal {
-    .product__slider {
-        width: 1000px;
-        height: 870px;
-        .slick-track {}
-
-        .slider-item0 {
-            img {
+    
+    &-dialog{
+        max-width: 1200px;
+        .carousel{
+            width: 600px;
+            margin-top: 40px;
+            margin-bottom: 100px;
+            margin-left: 20px;
+            &-item{
+            width: 600px;
+            height: 570px;
+            img{
                 width: 600px;
                 height: 570px;
-
-                background: url(1-59.jpg);
                 border-radius: 28px;
             }
         }
-    }
+            &-indicators  {
+                bottom: -100px;
+                justify-content: flex-start;
+                margin-left: 0px;
+                button.img-min{
+                    border-radius: 14px;
+                    width: 80px;
+                    height: 60px;
+                    background: red;
+                }
+                
+                
+            
 
-    .product__slider-nav {
-        .slider-item-min {
-            margin-right: 10px;
+        }
+        
         }
     }
-}
+
+
+}  

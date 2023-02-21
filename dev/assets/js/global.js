@@ -46,24 +46,10 @@ jQuery(document).ready(function($) {
         autoplaySpeed: 6000
     });
 
-    $('.product__slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.product__slider-nav'
-    });
-    $('.product__slider-nav').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.product__slider',
-        arrows: true,
-        centerMode: false,
-        focusOnSelect: true
-    });
+   
 
     (function(d) {
-        const a = d.querySelectorAll('[data-bs-target]');
+        const a = d.querySelectorAll('[data-bs-toggle="modal"]');
     
         a.forEach(t => {
             t.addEventListener('click', e => {
@@ -85,5 +71,40 @@ jQuery(document).ready(function($) {
         $(".show-more-item:hidden").slice(0,4).fadeIn();
         if ($(".show-more-item:hidden").length < 1) $(this).fadeOut();
       })
+
+
+
+
+
+
+    // получаем все элементы кнопок индикаторов
+const carouselIndicators = document.querySelectorAll('.carousel-indicators button');
+
+// проходим по каждому элементу кнопки индикатора
+carouselIndicators.forEach((button, index) => {
+  // получаем соответствующий элемент слайда
+  const slide = document.querySelectorAll('.carousel-item')[index];
+
+  // получаем элемент изображения или iframe слайда
+  const img = slide.querySelector('img');
+  const iframe = slide.querySelector('iframe');
+
+  if (img) {
+    // устанавливаем фон кнопки индикатора в соответствии с изображением
+    button.style.backgroundImage = `url('${img.src}')`;
+  } else if (iframe) {
+    // получаем data-video-id из атрибута iframe
+    const videoId = iframe.getAttribute('data-video-id');
+
+    // устанавливаем фон кнопки индикатора в соответствии с видео
+    button.style.backgroundImage = `url('https://img.youtube.com/vi/${videoId}/hqdefault.jpg')`;
+  }
+  button.style.backgroundSize = '100%';
+  button.style.backgroundRepeat = 'no-repeat';
+  button.style.backgroundPosition = 'center';
+});
+
+
+   
     
 })
