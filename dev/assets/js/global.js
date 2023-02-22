@@ -67,11 +67,29 @@ jQuery(document).ready(function($) {
         $('#exampleModal').modal('hide'); 
     })
    
-    $(".show-more-btn").click(function(e){
-        $(".show-more-item:hidden").slice(0,4).fadeIn();
-        if ($(".show-more-item:hidden").length < 1) $(this).fadeOut();
-      })
-
+   
+   $(".show-more-btn").each(function() {
+    const parent = $(this.parentElement);
+    const items = parent.find('.show-more-item:hidden');
+  
+    
+  
+    $(this).click(function(e) {
+      // показываем  4 элемента с классом "show-more-item"
+      items.filter(':hidden').slice(0, 4).fadeIn();
+      // если больше нет элементов с классом "show-more-item", которые нужно показать, скрываем кнопку "Show more"
+      if (items.filter(':hidden').length < 1) $(this).fadeOut();
+    })
+  })
+  
+  // добавляем обработчик события на каждый таб
+  $('.nav-link').on('shown.bs.tab', function(e) {
+    const parent = $(e.target).parent().next();
+    const items = parent.find('.show-more-item:hidden');
+    // показываем кнопку "Show more"
+    parent.find('.show-more-btn').show();
+  });
+  
 
 
 
@@ -102,7 +120,60 @@ carouselIndicators.forEach((button, index) => {
   button.style.backgroundSize = '100%';
   button.style.backgroundRepeat = 'no-repeat';
   button.style.backgroundPosition = 'center';
+
+  if(iframe) {
+    button.style.backgroundSize = '180%';
+  }
 });
+
+const dropdowns = document.querySelectorAll('[data-dropdown]');
+
+  // Добавляем обработчики клика на кнопки dropdown-toggle
+  dropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector('[data-dropdown-toggle]');
+    const menu = dropdown.querySelector('[data-dropdown-menu]');
+    const button = dropdown.querySelector('[data-dropdown-btn]');
+
+    toggle.addEventListener('click', () => {
+      // При клике на кнопку dropdown-toggle открываем или закрываем список
+      menu.classList.toggle('show');
+      toggle.setAttribute('aria-expanded', menu.classList.contains('show'));
+    });
+
+    // Добавляем обработчики клика на элементы списка dropdown-item
+    const items = menu.querySelectorAll('[data-dropdown-item]');
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        // При клике на элемент списка обновляем текст кнопки dropdown-toggle
+        button.textContent = item.getAttribute('data-dropdown-item');
+        menu.classList.remove('show');
+        toggle.setAttribute('aria-expanded', false);
+      });
+    });
+  });
+
+  const counter = document.querySelector('.counter');
+  const value = counter.querySelector('.counter-value');
+  const price = document.querySelector('.price');
+  const minus = counter.querySelector('.minus');
+  const plus = counter.querySelector('.plus');
+  let initialPrice = parseInt(price.textContent);
+
+  // Обработчик клика на кнопке "-"
+  minus.addEventListener('click', () => {
+    let currentValue = parseInt(value.textContent);
+    if (currentValue > 1) {
+      value.textContent = currentValue - 1;
+      price.textContent = (currentValue - 1) * initialPrice;
+    }
+  });
+
+  // Обработчик клика на кнопке "+"
+  plus.addEventListener('click', () => {
+    let currentValue = parseInt(value.textContent);
+    value.textContent = currentValue + 1;
+    price.textContent = (currentValue + 1) * initialPrice;
+  });
 
 
    
