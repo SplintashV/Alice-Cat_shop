@@ -155,9 +155,11 @@ const dropdowns = document.querySelectorAll('[data-dropdown]');
   const counter = document.querySelector('.counter');
   const value = counter.querySelector('.counter-value');
   const price = document.querySelector('.price');
+  const prevPrice = document.querySelector('.previous-price');
   const minus = counter.querySelector('.minus');
   const plus = counter.querySelector('.plus');
   let initialPrice = parseInt(price.textContent);
+  let initialPPrice = parseInt(prevPrice.textContent);
 
   // Обработчик клика на кнопке "-"
   minus.addEventListener('click', () => {
@@ -165,6 +167,7 @@ const dropdowns = document.querySelectorAll('[data-dropdown]');
     if (currentValue > 1) {
       value.textContent = currentValue - 1;
       price.textContent = (currentValue - 1) * initialPrice;
+      prevPrice.textContent = (currentValue - 1) * initialPPrice;
     }
   });
 
@@ -173,6 +176,7 @@ const dropdowns = document.querySelectorAll('[data-dropdown]');
     let currentValue = parseInt(value.textContent);
     value.textContent = currentValue + 1;
     price.textContent = (currentValue + 1) * initialPrice;
+    prevPrice.textContent = (currentValue + 1) * initialPPrice;
   });
 
 

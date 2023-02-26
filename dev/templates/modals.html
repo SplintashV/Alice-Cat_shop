@@ -1,123 +1,128 @@
 <!-- Modal -->
 <div class="modal fade  " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog .modal-fullscreen-xl-down">
+    <div class="modal-dialog modal-fullscreen-xl-down">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel"></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body  product">
-                <button type="button" class="btn btn-light" data-bs-dismiss="modal">В каталог</button>
-                <div class="row">
-                  <div class="col-lg-6">
-<div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class=" img-min active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=" img-min" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="img-min" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="img-min" aria-label="Slide 4"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="assets/img/product-img_1.png" id="1" class="d-block  img-fluid" alt="...">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal"><img src="assets/img/left-arrow.svg" alt=""> В каталог</button>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class=" img-min active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=" img-min" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="img-min" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="img-min" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/img/product-img_1.png" id="1" class="d-block  img-fluid" alt="...">
                       </div>
-                      <div class="carousel-item">
-                        <img src="assets/img/product-img_2.png" class="d-block  img-fluid" alt="...">
+                                        <div class="carousel-item">
+                                            <img src="assets/img/product-img_2.png" class="d-block  img-fluid" alt="...">
                       </div>
-                      <div class="carousel-item">
-                        <img src="assets/img/product-img_3.png" class="d-block  img-fluid" alt="...">
+                                            <div class="carousel-item">
+                                                <img src="assets/img/product-img_3.png" class="d-block  img-fluid" alt="...">
                       </div>
-                      <div class="carousel-item">
-                        
-                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pO-fTpAGHRk" data-video-id="pO-fTpAGHRk"></iframe>
-                        
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <h3 class="product-name">Светильник конструктор Гарри Поттер |  декоративный домик «Лесная Хижина» по мотивам «Гарри Поттера» | набор для сборки</h3>
-                    <div class="age-restrictions">Возраст ребенка: От 11 лет</div>
-                    <div class="price">12990</div>
-                    <div class="previous-price">14990</div>
-                    <div class="product-type">
-                      <h4 class="product-type__title">Тип домика</h4>
+                                                <div class="carousel-item">
 
-                      <div class="dropdown" data-dropdown>
-                        <button class="btn btn-secondary" type="button" data-dropdown-toggle aria-haspopup="true" aria-expanded="false" data-dropdown-btn>
-                          Выберите тип 
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" data-dropdown-menu>
-                          <li><a class="dropdown-item" href="#" data-dropdown-item="Конструктор">Конструктор</a></li>
-                          <li><a class="dropdown-item" href="#" data-dropdown-item="не Конструктор">Не Конструктор</a></li>
-                          <li><a class="dropdown-item" href="#" data-dropdown-item="Элемент 3">Элемент 3</a></li>
-                        </ul>
-                      </div>
-                      <div class="counter">
-                        <button class="counter-btn minus">-</button>
-                        <div class="counter-value">1</div>
-                        <button class="counter-btn plus">+</button>
-                      </div>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basketModal">
-                    купить домик
-                </button>
-                      <div class="product__description">
-                        <p>Набор для создания домика Лесная Хижина по мотивам вселенной Гарри Поттера
-                          <br><br>
-                          ⭐ 2-4 вечера увлекательной и легкой сборки<br>
-                          ⭐ Видеокурс по созданию домика в комплекте<br>
-                          ⭐ Стильная брендированная упаковка, набор можно сразу дарить<br>
-                          ⭐ Светильник работает от батареек, внутри светодиодная гирлянда<br>
-                          ⭐ Фишки: дымящаяся труба, уютная комнатка, светящийся камин, ящик семян<br>
-                          ⭐мандрагоры, ловушка для плотоядных слизней и еще множество интересных деталей<br>
-                          <br><br>
-                          Это первый в истории Alice&Cat домик, у которого может дымиться труба! Он самый объемный по наполнению, детализированный и интересный. Мне просто не верится, что этот дом получился такой живой и настолько уютный. Восторг и чистое волшебство!
-                          <br><br>
-                          Светильник работает от трёх батареек ААА (они не входят в комплект), внутри светодиодная гирлянда. Батареек хватает примерно на 1-2 месяца ежедневной работы по 3-4 часа.
-                          <br><br>
-                          В состав набора домика-конструктора входит полный комплект материалов и инструментов: деревянные детали, краски, кисти, воск, материал для черепицы, наждачная бумага, клей столярный, клей момент, канцелярский нож, канцелярские резинки, декор. А также интереснейшая инструкция, нарисованная полностью от руки, со встроенным QR-кодом – ссылкой на видеокурс по созданию домика.
-                          <br><br>
-                          Все это с любовью собрано и упаковано в стильные брендированные коробочки с нашей фирменной открыткой и магнитиком, так что набор можно сразу дарить.
-                          <br><br>
-                          Размер домика: ширина – 30 см, длина бокового фасада – 25 см, высота – 26 см.</p>
-                      </div>
+                                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pO-fTpAGHRk" data-video-id="pO-fTpAGHRk"></iframe>
+
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-text col-lg-6">
+                                        <h3 class="product-name">Светильник конструктор Гарри Поттер |  декоративный домик «Лесная Хижина» по мотивам «Гарри Поттера» | набор для сборки</h3>
+                                        <div class="age-restrictions">Возраст ребенка: От 11 лет</div>
+                                        <div class="price-row d-flex">
+                                            <div class="price">12990</div>
+                                            <div class="previous-price">14990</div>
+                                        </div>
+                                        <div class="product-type">
+                                            <h4 class="product-type__title">Тип домика</h4>
+
+                                            <div class="dropdown" data-dropdown>
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-dropdown-toggle aria-haspopup="true" aria-expanded="false" data-dropdown-btn>
+                                                    Выберите тип
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" data-dropdown-menu>
+                                                    <li><a class="dropdown-item" href="#" data-dropdown-item="Конструктор">Конструктор</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-dropdown-item="не Конструктор">Не Конструктор</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-dropdown-item="Элемент 3">Элемент 3</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex">
+                                            <div class="counter  ">
+                                                <button class="counter-btn minus">-</button>
+                                                <div class="counter-value">1</div>
+                                                <button class="counter-btn plus">+</button>
+                                            </div>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basketModal">
+                                                Купить домик
+                                            </button>
+                                        </div>
+                                        <div class="product__description">
+                                            <p>Набор для создания домика Лесная Хижина по мотивам вселенной Гарри Поттера
+                                                <br><br>
+                                                ⭐ 2-4 вечера увлекательной и легкой сборки<br>
+                                                ⭐ Видеокурс по созданию домика в комплекте<br>
+                                                ⭐ Стильная брендированная упаковка, набор можно сразу дарить<br>
+                                                ⭐ Светильник работает от батареек, внутри светодиодная гирлянда<br>
+                                                ⭐ Фишки: дымящаяся труба, уютная комнатка, светящийся камин, ящик семян<br>
+                                                ⭐мандрагоры, ловушка для плотоядных слизней и еще множество интересных деталей<br>
+                                                <br><br>
+                                                Это первый в истории Alice&Cat домик, у которого может дымиться труба! Он самый объемный по наполнению, детализированный и интересный. Мне просто не верится, что этот дом получился такой живой и настолько уютный. Восторг и чистое волшебство!
+                                                <br><br>
+                                                Светильник работает от трёх батареек ААА (они не входят в комплект), внутри светодиодная гирлянда. Батареек хватает примерно на 1-2 месяца ежедневной работы по 3-4 часа.
+                                                <br><br>
+                                                В состав набора домика-конструктора входит полный комплект материалов и инструментов: деревянные детали, краски, кисти, воск, материал для черепицы, наждачная бумага, клей столярный, клей момент, канцелярский нож, канцелярские резинки, декор. А также интереснейшая инструкция, нарисованная полностью от руки, со встроенным QR-кодом – ссылкой на видеокурс по созданию домика.
+                                                <br><br>
+                                                Все это с любовью собрано и упаковано в стильные брендированные коробочки с нашей фирменной открыткой и магнитиком, так что набор можно сразу дарить.
+                                                <br><br>
+                                                Размер домика: ширина – 30 см, длина бокового фасада – 25 см, высота – 26 см.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="modal-footer">
+
+                            </div>
+                        </div>
                     </div>
-                  </div>
+            </div>
+
+            <div class="modal fade" id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="basketModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            321
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
                 </div>
-                
-
-
-                
             </div>
-            <div class="modal-footer">
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="basketModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                321
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-            </div>
-        </div>
-    </div>
-</div>

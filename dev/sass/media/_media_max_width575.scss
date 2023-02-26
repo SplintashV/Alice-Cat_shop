@@ -35,7 +35,67 @@
             }
         }
     }
+    .modal{
+        .carousel{
+            width: 285px;
+            
 
+            &-inner {
+                margin-top: -35px;
+            }
+
+            &-item {
+                width: 280px;
+                height: 295px;
+
+                iframe {
+                    width: 280px;
+                    height: 295px;
+                    border-radius: 14px;
+                }
+
+                img {
+                    width: 280px;
+                    height: 295px;
+                    border-radius: 14px;
+                }
+            }
+
+            &-indicators {
+                bottom: -60px;
+                
+
+                button.img-min {
+                    border-radius: 7px;
+                    width: 40px;
+                    height: 19px;
+                    
+                }
+
+            }
+        }
+
+        .product-text{
+            margin-top: -35px;
+            padding-left: 30px;
+            .product-name{
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 5px;
+            }
+
+            .age-restrictions{
+                font-size: 14px;
+            }
+
+            .product__description{
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+        
+    }
     .first-screen {
         height: 570px;
         background: url(assets/img/firstscreen-back_phone.png) center/100% no-repeat;
