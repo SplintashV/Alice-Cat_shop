@@ -5,7 +5,7 @@
     background: url(assets/img/firstscreen-back.png) center/cover no-repeat;
     margin-top: -185px;
     padding-top: 300px;
-    
+
 
     &__title {
         color: #FFFCF0;
@@ -18,8 +18,8 @@
         text-transform: uppercase;
         margin: 0 auto 30px auto;
         position: relative;
-        
-        &::before{
+
+        &::before {
             content: "";
             position: absolute;
             width: 40px;
@@ -28,8 +28,8 @@
             left: 685px;
             background: url(assets/img/first-screen_title-before.png) center no-repeat;
         }
-        
-        &::after{
+
+        &::after {
             content: "";
             position: absolute;
             width: 40px;
@@ -41,10 +41,10 @@
 
         }
 
-    
+
     }
 
-    &__descreption{
+    &__descreption {
         color: #FFFCF0;
         font-family: $font-primary;
         max-width: 474px;
@@ -57,15 +57,42 @@
 
     }
 
-    .btn-primary{
+    .btn-primary {
         display: block;
-        
+
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
         padding: 15px 40px;
         width: 195px;
         margin: 0 auto;
+    }
+
+    .alert-discount {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(100 100 100 / 49%);
+        z-index: 1;
+
+        .alert-window {
+            background-color: #FFFCF0;
+            border-radius: 14px;
+            height: 560px;
+            width: 560px;
+            margin: 150px auto 0;
+
+            
+        }
+
+        
+
+    }
+
+
+
+    .alert.show {
+        opacity: 1;
+        transition: opacity 2s ease-in-out;
     }
 
 }
