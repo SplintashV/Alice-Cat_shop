@@ -1,4 +1,5 @@
 <!-- Modal -->
+<!-- Товар -->
 <div class="modal fade  " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen-xl-down">
         <div class="modal-content">
@@ -108,77 +109,126 @@
                         </div>
                     </div>
             </div>
-
- <div class="modal fade basket-modal " id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel" aria-hidden="true">
+            <!-- Корзина -->
+            <div class="modal fade basket-modal " id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
                             <h3 class="order-title">
                                 Ваш заказ:
                             </h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
                             <div class="product-item">
                                 <h3 class="product-item__name">Светильник конструктор «Лесная Хижина»</h3>
-                                <img src="" alt="" class="product-img img-fluid">
-                                <div class="product-type">
-                                    <div class="product-type__title">Тип изделия:</div>
-                                    <div class="product-type__category">Конструктор</div>
-                                    <div class="counter  ">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/product-img_1.png" alt="" class="product-img img-fluid ">
+                                    <div class="product-type">
+                                        <div class="product-type__title">Тип изделия:</div>
+                                        <div class="product-type__category">Конструктор</div>
+
+                                    </div>
+                                    <div class="counter">
                                         <button class="counter-btn minus">-</button>
                                         <div class="counter-value">1</div>
                                         <button class="counter-btn plus">+</button>
                                     </div>
-                                    <div class="price">12990</div>
-                                    <button class="delite-btn"></button>
+                                    <div class="price">12 990 ₽</div>
+                                    <button class="delite-btn btn-close"></button>
                                 </div>
+
                             </div>
                             <div class="amount">
                                 <div class="amount-title">Сумма:</div>
                                 <div class="ammount-price"></div>
                             </div>
-                            <div class="form-about-buyer " id="about-buyer form ">
-                                <form>
-                                    <input type="text" id="fname" name="fname" placeholder="Ваше имя">
-                                    <input type="tel" id="ftelephone" name="telephone" placeholder="+7 (000) 00-00-00"  maxlength="17">
-                                    <input type="email"  id="femail" placeholder="Ваш E-mail">
-                                    <input type="coupon"  id="fcoupon" placeholder="Код купона">
-                                </form>
-                            </div>
-                            <div class="delivery">
-                                <h3 class="delivery__title">Вариант доставки:</h3>
-                            </div>
+
+                        </div>
+                        <div class="delivery">
+                            <h3 class="delivery__title">Вариант доставки:</h3>
+                            <h4>Город</h4>
                             <select class="form-select " aria-label="Default select example">
                                 <option selected>Санкт-Петербург</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
-                              </select>
-                              <div class="delivery__radio">
+                            </select>
+                            <div class="delivery__radio">
                                 <p>
                                     <input type="radio" id="contactChoice1" name="delivery" value="-">
                                     <label for="contactChoice1">СДЭК, 450 ₽</label>
                                 </p>
-                                
+
                                 <p>
                                     <input type="radio" id="contactChoice2" name="delivery" value="-">
-                                <label for="contactChoice2">Доставка «Почта России», 300 ₽ <br> Варианты доставки будут обновлены при оформлении заказа</label>
+                                    <label for="contactChoice2">Доставка «Почта России», 300 ₽ <br> Варианты доставки будут обновлены при оформлении заказа</label>
                                 </p>
-                    
-                                
-                            
-                              </div>
-                                
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
+
+                            </div>
+
+
+                            <div class="form-about-buyer " id="about-buyer form ">
+                                <form>
+                                    <label for="fname" class="form-label">Получатель</label>
+                                    <input type="text" id="fname" name="fname" placeholder="Ваше имя">
+                                    <input type="tel" id="ftelephone" name="telephone" placeholder="+7 (000) 00-00-00" maxlength="17">
+                                    <input type="email" id="femail" placeholder="Ваш E-mail">
+
+                                    <label for="address" class="form-label">Aдресс</label>
+                                    <input type="text" id="adress" name="address" placeholder="">
+                                    <label for="comment" class="form-label">Комментарий</label>
+                                    <textarea class="form-control" id="comment" rows="1" placeholder="Напишите комментарий к заказу"></textarea>
+                                    <input type="coupon" id="fcoupon" placeholder="Код купона"><button>Применить</button>
+
+                                </form>
+                                <div class="payment-method">
+                                    <p>
+                                        <input type="radio" id="payment1" name="payment-method" value="-">
+                                        <label for="payment1">Банковской картой</label>
+
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="payment2" name="payment-method" value="-">
+                                        <label for="payment2">Оплата при получении</label>
+
+                                    </p>
+                                </div>
+
+                                <div class="total-price">
+                                    <div class="class">
+                                        <h2>Товары</h2>
+                                        <div class="price">12 990 Р</div>
+                                    </div>
+
+                                    <div class="class">
+                                        <h2>СДЭК</h2>
+                                        <div class="price">450 Р</div>
+                                    </div>
+                                    <div class="total">
+                                        <h3>Итоговая сумма</h3>
+                                        <div class="price">13 440 Р</div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+                        <button>Оформить заказ</button>
+                        <div class="btn-description">
+                            Нажимая на кнопку «Отправить», вы соглашаетесь с политикой конфиденциальности
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- Cкидка -->
             <div class="modal fade discount-modal " id="discountModal" tabindex="-1" aria-labelledby="discountModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-sm">
                     <div class="modal-content">
@@ -193,28 +243,54 @@
                             </div>
 
                             <div class="discount-form">
-                                
+
                                 <label for="E-mail" class="form-label">Электронная почта</label>
-                                <input type="email" id="E-mail" name="email" placeholder="Ваш E-mail" class="discount-form__email" > 
+                                <input type="email" id="E-mail" name="email" placeholder="Ваш E-mail" class="discount-form__email">
 
                                 <label for="telephone" class="form-label">Ваш телефон</label>
                                 <input type="tel" id="telephone" name="telephone" placeholder="+7 (000) 00-00-00" class="discount-form__tel" maxlength="17">
 
-                                
 
-                                 <input type="button" class="btn btn-primary" value="Забрать подарок">
-                                 <div class="btn-atr">Нажимая на кнопку «Забрать подарок», вы соглашаетесь с политикой конфиденциальности</div>
-                                    
-                                
+
+                                <input type="button" class="btn btn-primary" value="Забрать подарок">
+                                <div class="btn-atr">Нажимая на кнопку «Забрать подарок», вы соглашаетесь с политикой конфиденциальности</div>
+
+
                             </div>
 
-                            
-                                
-                            
-                             
-                                
+
+
+
+
                         </div>
-                       
+
                     </div>
                 </div>
+            </div>
+            <!-- Алерт корзина пуста -->
+            <div class="alert alert-busket-empty  alert-dismissible fade  fixed-top" id="basket-alert-empty " role="alert" style="display: none;">
+                <h2>Корзина пуста</h2>
+                В корзине нет товаров. Перейдите <a href="#catalog" class="alert-link">в каталог</a> и добавьте понравившиеся товары в корзину!
+
+
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+            <!-- Алерт товар в корзине -->
+            <div class="alert alert-busket alert-dismissible fade  fixed-top" id="basket-alert" role="alert" style="display: none;">
+                <h2>В корзине уже есть товар</h2>
+
+                <div class="alert-text">Продолжим покупки?</div>
+                <div class="alert-btns ">
+                    <a href="" class="alert-link btn btn-primary" style="background-color: #BEBEbE; margin-right: 20px; "  data-bs-dismiss="alert">Продолжить покупки </a>
+                    <button type="button" class="btn btn-primary alert-link busket-btn" id="openModalButton" style="padding: 20px 80px;" data-bs-toggle="modal" data-bs-target="#basketModal">
+                        В корзину
+                    </button>
+                </div>
+
+
+
+
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
             </div>

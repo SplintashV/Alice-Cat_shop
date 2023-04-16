@@ -187,5 +187,43 @@ const dropdowns = document.querySelectorAll('[data-dropdown]');
     }, 30000); // 30 секунд
   });
    
-    
+  // Получаем ссылки на элементы алерта, модального окна и кнопку открытия модального окна
+var alertElement = document.getElementById('basket-alert');
+var modalElement = new bootstrap.Modal(document.getElementById('basketModal'));
+var openModalButton = document.getElementById('openModalButton');
+
+// Флаг, который определяет, было ли уже выполнено нажатие на кнопку открытия модального окна
+var isModalOpened = false;
+
+// Добавляем обработчик события закрытия алерта
+alertElement.addEventListener('closed.bs.alert', function () {
+  // Если модальное окно не было открыто, открываем его
+  if (!isModalOpened) {
+    modalElement.show();
+    isModalOpened = true;
+  }
+});
+
+// Добавляем обработчик клика на кнопку открытия модального окна
+openModalButton.addEventListener('click', function () {
+  // Закрываем алерт
+  alertElement.classList.remove('show');
+  alertElement.classList.add('hide');
+});
+
+// Добавляем обработчик события hidden.bs.modal на модальное окно
+modalElement._element.addEventListener('hidden.bs.modal', function () {
+  // После закрытия модального окна ничего не делаем
+});
+ 
+
+//Убирает display none с алерта если его вызовут
+const alerts = document.querySelectorAll('.alert');
+
+alerts.forEach(alert => {
+  if (alert.classList.contains('show')) {
+    alert.style.display = 'block';
+  }
+});
+
 })
