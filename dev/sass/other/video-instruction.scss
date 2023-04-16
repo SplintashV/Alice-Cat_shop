@@ -8,7 +8,7 @@
     &__title{
         font-family: $font-secondary;
         font-weight: 500;
-        font-size: 24px;
+        font-size: 30px;
         line-height: 31px;
         text-transform: uppercase;
         color: $primary-color;
@@ -19,12 +19,13 @@
         &::before{
             content: "";
             position: absolute;
-            height: 151px;
-            width: 116px;
+            height: 208px;
+            width: 160px;
             background: url(assets/img/video-instruction_title-atr.png) center no-repeat;
             background-size: 100%;
-            bottom: 0px;
-            left: 281px;
+            bottom: -245px;
+            left: -137px;
+        
         }
     }
 

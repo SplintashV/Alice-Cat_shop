@@ -179,12 +179,12 @@ const dropdowns = document.querySelectorAll('[data-dropdown]');
     prevPrice.textContent = (currentValue + 1) * initialPPrice;
   });
 
-  
+  // Алерт-модалка скидки
   window.addEventListener('load', function () {
     setTimeout(function () {
-      var alertElement = document.querySelector('.alert');
-      alertElement.classList.add('show');
-    }, 5000); // 5 секунд
+      var modalElement = new bootstrap.Modal(document.getElementById('discountModal'));
+      modalElement.show();
+    }, 30000); // 30 секунд
   });
    
     

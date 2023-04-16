@@ -276,6 +276,110 @@
 }
 
 
-.basket-modal{
-    
+.basket-modal {}
+
+.discount-modal {
+    .modal-dialog {
+        max-width: 560px;
+
+        .modal-content {
+            border-radius: 14px;
+
+            .modal-header {
+                border-bottom: none;
+                height: 288px;
+                background: url(assets/img/alert-doscount_img.png) center no-repeat;
+
+                .btn-close {
+                    background: url(assets/img/btn-close-white.svg)center/1em auto no-repeat;
+                }
+            }
+
+            .modal-body {
+                padding-right: 0;
+
+                .discount-title {
+                    color: #19191B;
+                    text-align: center;
+                    margin-top: 45px;
+
+
+                    h3 {
+                        font-family: 'SF Pro Display';
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 29px;
+
+                    }
+
+                    h2 {
+                        font-family: 'FoglihtenNo06';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 40px;
+                        line-height: 51px;
+                        text-transform: uppercase;
+                    }
+
+                }
+
+                .discount-form {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 480px;
+                    margin: 0 auto;
+
+                    label {
+                        font-family: 'SF Pro Display';
+
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #19191B;
+
+                        margin-top: 25px;
+                        margin-bottom: 10px;
+                    }
+
+                    .discount-form__email,
+                    .discount-form__tel {
+                        width: 100%;
+                        border-radius: 30px;
+                        border: 1px solid #BEBEBE;
+                        font-size: 16px;
+                        padding: 11px 20px;
+
+                        
+
+                    }
+
+                    .btn-primary {
+                        margin-top: 25px;
+                        padding: 15px 39px;
+                        font-family: 'SF Pro Display';
+
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+
+                    .btn-atr {
+                        margin-top: 25px;
+                        font-family: 'SF Pro Display';
+
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: center;
+
+
+
+                        color: #19191B;
+                    }
+
+                }
+            }
+        }
+
+    }
 }
