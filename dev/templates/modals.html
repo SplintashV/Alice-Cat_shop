@@ -1,6 +1,6 @@
 <!-- Modal -->
 <!-- Товар -->
-<div class="modal fade  " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade modal-product  " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen-xl-down">
         <div class="modal-content">
             <div class="modal-header">
@@ -111,7 +111,7 @@
             </div>
             <!-- Корзина -->
             <div class="modal fade basket-modal " id="basketModal" tabindex="-1" aria-labelledby="basketModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog ">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h3 class="order-title">
@@ -140,91 +140,100 @@
                                 </div>
 
                             </div>
-                            <div class="amount">
+                            <div class="amount d-flex">
                                 <div class="amount-title">Сумма:</div>
-                                <div class="ammount-price"></div>
+                                <div class="amount-price">12 990 ₽</div>
                             </div>
 
-                        </div>
-                        <div class="delivery">
-                            <h3 class="delivery__title">Вариант доставки:</h3>
-                            <h4>Город</h4>
-                            <select class="form-select " aria-label="Default select example">
-                                <option selected>Санкт-Петербург</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <div class="delivery__radio">
-                                <p>
-                                    <input type="radio" id="contactChoice1" name="delivery" value="-">
-                                    <label for="contactChoice1">СДЭК, 450 ₽</label>
-                                </p>
-
-                                <p>
-                                    <input type="radio" id="contactChoice2" name="delivery" value="-">
-                                    <label for="contactChoice2">Доставка «Почта России», 300 ₽ <br> Варианты доставки будут обновлены при оформлении заказа</label>
-                                </p>
-
-
-                            </div>
-
-
-                            <div class="form-about-buyer " id="about-buyer form ">
-                                <form>
-                                    <label for="fname" class="form-label">Получатель</label>
-                                    <input type="text" id="fname" name="fname" placeholder="Ваше имя">
-                                    <input type="tel" id="ftelephone" name="telephone" placeholder="+7 (000) 00-00-00" maxlength="17">
-                                    <input type="email" id="femail" placeholder="Ваш E-mail">
-
-                                    <label for="address" class="form-label">Aдресс</label>
-                                    <input type="text" id="adress" name="address" placeholder="">
-                                    <label for="comment" class="form-label">Комментарий</label>
-                                    <textarea class="form-control" id="comment" rows="1" placeholder="Напишите комментарий к заказу"></textarea>
-                                    <input type="coupon" id="fcoupon" placeholder="Код купона"><button>Применить</button>
-
-                                </form>
-                                <div class="payment-method">
-                                    <p>
-                                        <input type="radio" id="payment1" name="payment-method" value="-">
-                                        <label for="payment1">Банковской картой</label>
-
-                                    </p>
-                                    <p>
-                                        <input type="radio" id="payment2" name="payment-method" value="-">
-                                        <label for="payment2">Оплата при получении</label>
-
-                                    </p>
+                            <div class="delivery">
+                                <h3 class="delivery__title">Вариант доставки:</h3>
+                                <h5 style="font-weight: 400;">Город</h5>
+                                <div class="dropdown delivery__dropdown" data-dropdown="">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-dropdown-toggle="" aria-haspopup="true" aria-expanded="true" data-dropdown-btn="">
+                                        Выберите Город
+                                    </button>
+                                    <ul class="dropdown-menu show" aria-labelledby="dropdownMenuButton" data-dropdown-menu="">
+                                        <li><a class="dropdown-item" href="#" data-dropdown-item="СПБ">Санкт Петербург</a></li>
+                                        <li><a class="dropdown-item" href="#" data-dropdown-item="не СПБ">Не Петербург</a></li>
+                                        <li><a class="dropdown-item" href="#" data-dropdown-item="МСК">москва</a></li>
+                                    </ul>
                                 </div>
-
-                                <div class="total-price">
-                                    <div class="class">
-                                        <h2>Товары</h2>
+                                <div clas="delivery__radio">
+                                    <p>
+                                     <input type="radio" id="contactChoice1" name="delivery" value="-">
+                                        <label for="contactChoice1">СДЭК, 450 ₽</label>
+                                    </p>
+    
+                                    <p>
+                                        <input type="radio" id="contactChoice2" name="delivery" value="-">
+                                        <label for="contactChoice2">Доставка «Почта России», 300 ₽ <br> Варианты доставки будут обновлены при оформлении заказа</label>
+                                    </p>
+    
+    
+                                </div>
+    
+    
+                                <div class="form-about-buyer " id="about-buyer form ">
+                                    <form>
+                                        <label for="fname" class="form-label">Получатель</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Ваше имя">
+                                        <input type="tel" id="ftelephone" name="telephone" placeholder="+7 (000) 00-00-00" maxlength="17">
+                                        <input type="email" id="femail" placeholder="Ваш E-mail">
+    
+                                        <label for="address" class="form-label">Aдресс</label>
+                                        <input type="text" id="adress" name="address" placeholder="">
+                                        <label for="comment" class="form-label">Комментарий</label>
+                                        <textarea class="form-control" id="comment" rows="1" placeholder="Напишите комментарий к заказу"></textarea>
+                                        <input class="coupon" type="coupon" id="fcoupon" placeholder="Код купона">
+                                        <button type="button" class=" btn  btn-dark accept-btn">Применить</button>
+    
+                                    </form>
+                                    <div class="payment-method">
+                                        <h4 style="font-weight: 400;">Способ оплаты:</h4>
+                                        <p>
+                                            <input type="radio" id="payment1" name="payment-method" value="-">
+                                            <label for="payment1">Банковской картой</label>
+    
+                                        </p>
+                                        <p>
+                                            <input type="radio" id="payment2" name="payment-method" value="-">
+                                            <label for="payment2">Оплата при получении</label>
+    
+                                        </p>
+                                    </div>
+    
+                                    
+    
+    
+                                    </div>
+    
+                                </div>
+                                <div class="total-price ">
+                                    <div class="total-price__product d-flex">
+                                        <h5 class="title">Товары:</h5>
                                         <div class="price">12 990 Р</div>
                                     </div>
-
-                                    <div class="class">
-                                        <h2>СДЭК</h2>
+                                    <div class="total-price__mail d-flex">
+                                        <h5 class="title">СДЭК:</h5>
                                         <div class="price">450 Р</div>
                                     </div>
-                                    <div class="total">
-                                        <h3>Итоговая сумма</h3>
+    
+    
+                                    <div class="total-price__money d-flex">
+                                        <h2 class="title">Итоговая сумма:</h2>
                                         <div class="price">13 440 Р</div>
                                     </div>
-
-
-                                </div>
-
+    
+    
+    
+                            </div>
+                            <button id="submit-all-forms" type="button" class="btn btn-primary">Оформить заказ</button>
+                            <div class="btn-description">
+                                Нажимая на кнопку «Оформить заказ», вы соглашаетесь с политикой конфиденциальности
                             </div>
 
-
-
-
                         </div>
-                        <button>Оформить заказ</button>
-                        <div class="btn-description">
-                            Нажимая на кнопку «Отправить», вы соглашаетесь с политикой конфиденциальности
-                        </div>
+                       
                     </div>
                 </div>
             </div>
