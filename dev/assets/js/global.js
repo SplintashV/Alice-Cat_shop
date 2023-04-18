@@ -48,24 +48,34 @@ jQuery(document).ready(function($) {
 
    
 
-    (function(d) {
-        const a = d.querySelectorAll('[data-bs-toggle="modal"]');
-    
-        a.forEach(t => {
-            t.addEventListener('click', e => {
-                const b = d.querySelectorAll('.modal');
-    
-                b.forEach(i => {
-                    i.classList.remove('show');
-                    d.getElementById(e.target.dataset.modal).classList.add('show');
-                })
-            })
-        })
-    })(document);
+ 
 
-    $('#basketModal').click(() => {
-        $('#exampleModal').modal('hide'); 
-    })
+
+    //test
+    (function(d) {
+      const a = d.querySelectorAll('[data-bs-toggle="modal"]');
+  
+      a.forEach(t => {
+          t.addEventListener('click', e => {
+              const b = d.querySelectorAll('.modal');
+  
+              b.forEach(i => {
+                  i.classList.remove('show');
+                  const targetModal = d.getElementById(e.target.dataset.modal);
+                  if (targetModal.getAttribute('id') === 'alertBusketModal') {
+                      targetModal.classList.add('show');
+                  } else {
+                      d.getElementById('exampleModal').classList.add('show');
+                  }
+              })
+          })
+      })
+  })(document);
+  
+  $('#basketModal').click(() => {
+      $('#exampleModal').modal('hide'); 
+  })
+  ///------------------------
    
    
    $(".show-more-btn").each(function() {
@@ -225,5 +235,10 @@ alerts.forEach(alert => {
     alert.style.display = 'block';
   }
 });
+
+
+var modalLinks = document.querySelectorAll('[data-show-modal]');
+
+
 
 })

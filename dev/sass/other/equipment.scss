@@ -87,12 +87,17 @@
         display: block;
         text-align: center;
     }
-
-    &-border-bottom{
-        height: 259px;
+    &__border-img{
+        height: 2074px;
         width: 100%;
         margin-top: 42px;
-        margin-bottom: -10px;
+        background: url(assets/img/equipment_bottom-img.png)center/cover no-repeat;
+    }
+    &__border-bottom{
+        height: 556px;
+        width: 100%;
+        margin-top: -1220px;
+        margin-bottom: -230px;
         background: url(assets/img/catalog__border-top.png) center/cover no-repeat;
     }    
 }
