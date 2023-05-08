@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
  
 
 
-    //test
+    //Modalki
     (function(d) {
       const a = d.querySelectorAll('[data-bs-toggle="modal"]');
   
@@ -75,7 +75,9 @@ jQuery(document).ready(function($) {
   $('#basketModal').click(() => {
       $('#exampleModal').modal('hide'); 
   })
-  ///------------------------
+ 
+  
+ 
    
    
    $(".show-more-btn").each(function() {
