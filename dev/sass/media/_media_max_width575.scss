@@ -787,6 +787,7 @@
                 width: 82px;
                 bottom: 19px;
                 left: 218px;
+                display: none;
             }
         }
 
@@ -841,29 +842,32 @@
             line-height: 140%;
         }
 
-        .accordion{
+        .accordion {
             margin-bottom: 40px;
-            &-button{
+
+            &-button {
                 font-weight: 500;
-font-size: 15px;
-line-height: 120%;
+                font-size: 15px;
+                line-height: 120%;
             }
         }
 
-        &-form{
-            &__title{
+        &-form {
+            &__title {
                 margin-left: 0;
                 text-align: center;
                 font-size: 25px;
-line-height: 140%;
-                &-atr{
+                line-height: 140%;
+
+                &-atr {
                     margin-left: auto;
                     margin-right: auto;
                     text-align: center;
                     max-width: 265px;
                 }
             }
-            .form-row{
+
+            .form-row {
                 flex-direction: column;
                 padding-right: 0;
 
@@ -871,10 +875,12 @@ line-height: 140%;
                 .form-control {
                     margin-bottom: 20px;
                 }
-                .btn-primary{
+
+                .btn-primary {
                     width: 296px;
                 }
-                .btn-atr{
+
+                .btn-atr {
                     text-align: center;
                     margin-right: 0;
                     margin-left: 0;
@@ -886,4 +892,70 @@ line-height: 140%;
             }
         }
     }
+
+    .footer {
+
+        &__items {
+            height: 630px;
+            padding: 30px;
+
+            .footer__navbar {
+                margin-top: 150px;
+
+                &-title {
+                    display: none;
+                }
+
+                .navbar-items {
+                    display: block;
+
+                    ul {
+                        margin-bottom: 0px;
+
+                        li {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+            }
+
+            .product-logo {
+                margin-top: -785px;
+                max-width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .social-links {
+                margin-top: -955px;
+            }
+
+            .footer__contacts {
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 48px;
+                padding-top: 0;
+                text-align: center;
+                max-width: 300px;
+                margin-left: -10px;
+            }
+
+            .legal-info {
+                margin-top: 10px;
+            }
+        }
+
+    }
+
+    .discount-modal{
+        .modal-body{
+            .discount-form{
+                padding: 10px;
+            }
+        }
+        
+    }
+
+
 }

@@ -4,10 +4,11 @@
     padding-bottom: 20px;
 
     &__items {
-        background: $white;
+        background: white;
         border-radius: 30px;
         height: 330px;
         padding: 60px;
+        background-image: url(assets/img/footer__back-img.png);
 
         .footer__navbar {
 
