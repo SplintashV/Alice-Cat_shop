@@ -1,6 +1,9 @@
 .about-person{
     background: url(assets/img/about-person-back.png) top/cover no-repeat;
+    background: #19191B;
     padding-top: 200px;
+    border-top-left-radius: 46% 24%;
+    border-top-right-radius: 46% 24%;
     .container{
         max-width: 1200px;
     }

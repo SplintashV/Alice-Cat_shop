@@ -498,6 +498,7 @@
         padding-top: 60px;
         padding-bottom: 121px;
         margin-top: -1px;
+        border-radius: 0 0 53% 43%/0 0 5% 5%;
 
         &::before {
             width: 570px;
@@ -570,7 +571,7 @@
     }
 
     .video-instruction {
-        padding-top: 65px;
+        padding-top: 111px;
         margin-bottom: 50px;
 
         &__title {
@@ -765,6 +766,9 @@
     .about-person {
         padding-top: 50px;
         padding-bottom: 40px;
+        border-top-left-radius: 46% 9%;
+    border-top-right-radius: 46% 9%;
+
 
         &__title {
             h2 {

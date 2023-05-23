@@ -54,6 +54,38 @@
 
 
     }
+    .circle {
+        position: absolute;
+        left: 630px;
+        top: -40px;
+        width: 100px;
+    
+        animation: spinner-border 20s linear infinite;
+        &__text {
+            color: #000000;
+            font-family: "FoglihtenNo06";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+        }
+    
+        &:after {
+            content: "";
+            display: block;
+    
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+    
+            width: 20px;
+            height: 20px;
+            background: url("assets/img/zvezda.png") center (center/cover) no-repeat;
+        }
+    
+        
+    
+    }
 
     &__slider {
         

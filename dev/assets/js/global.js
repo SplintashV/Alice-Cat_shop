@@ -55,7 +55,8 @@ jQuery(document).ready(function($) {
         arrows: false,
         infinite: false,
         draggable: false,
-        swipe: false,
+        swipe: true,
+        speed: 1800,
         variableWidth: true
       });
     

@@ -3,6 +3,7 @@
     padding-top: 80px;
     position: relative;
     padding-bottom: 250px;
+    border-radius: 0 0 53% 48%/0 0 13% 13%;
 
     &::before {
         content: "";
@@ -13,17 +14,17 @@
         height: 411px;
         background: url(assets/img/offers_before.svg) center repeat-x;
     }
-    &::after{
-        content: "";
-        position: absolute;
-        height: 560px;
-        width: 1905px;
-        background: url(assets/img/video-instruction_frame.png) center/cover no-repeat;
-        background-size: 100%;
-        bottom: -346px;
-        left: 0;
-        
-    }
+//   &::after{
+//       content: "";
+//       position: absolute;
+//       height: 560px;
+//       width: 1905px;
+//       background: url(assets/img/video-instruction_frame.png) center/cover no-repeat;
+//       background-size: 100%;
+//       bottom: -346px;
+//       left: 0;
+//       
+//   }
 
     &__title {
         font-family: $font-secondary;
