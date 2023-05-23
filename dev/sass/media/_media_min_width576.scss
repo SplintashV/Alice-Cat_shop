@@ -1,2 +1,13 @@
 @media screen and (min-width: 576px) {
+    .basket-modal{
+        .modal-content{
+            .modal-body{
+                .product-item{
+                    .mobile-column{
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
 }

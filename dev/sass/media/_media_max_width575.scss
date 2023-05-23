@@ -948,13 +948,76 @@
 
     }
 
-    .discount-modal{
-        .modal-body{
-            .discount-form{
+    .basket-modal {
+        .modal-content{
+            padding: 20px;
+            .modal-body {
+            .product-item {
+                .mobile-column{
+                    max-width: 100px;
+                }
+                .product-img{
+                    margin-right: 5px;
+                }
+                &__name {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    max-width: 280px;
+                }
+                .product-type{
+                    padding-left: 10px;
+                }
+
+                .price{
+                    font-size: 16px;
+                }
+            }
+
+            .amount{
+                margin-top: 10px;
+                &-title{
+                    font-size: 20px;
+                }
+                &-price{
+                    font-size: 20px;
+                }
+            }
+
+            input[type="radio"] + label:before {
+                margin-right: 2px;
+            }
+
+            .form-about-buyer form input.coupon{
+                width: 50%;
+            }
+
+            .form-about-buyer form .accept-btn {
+                width: 50%;
+                height: 49px;
+            }
+
+            .total-price__money{
+                h2.title{
+                    font-size: 20px;
+                }
+                .price{
+                    font-size: 20px;
+                }
+            }
+        }
+        }
+        
+
+    }
+
+    .discount-modal {
+        .modal-body {
+            .discount-form {
                 padding: 10px;
             }
         }
-        
+
     }
 
 

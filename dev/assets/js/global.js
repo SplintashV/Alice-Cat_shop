@@ -36,16 +36,97 @@ jQuery(document).ready(function($) {
     if($('.post-item iframe').length){
         $('.post-item iframe').closest('p').addClass('iframe-box')
     }
+//---------------- Cлайдер 
+// $('.about-product__slider').slick({
+//     infinite: false,
+//     variableWidth: true,
+//     speed: 2000,
+// });
 
-    $('.about-product__slider').slick({
+    //попытка в скролл слайдера -----------------------------
+ 
+    $(document).ready(function() {
+      var isScrolling = false;
+      var isLastSlideReached = false;
+      var sliderHeight = $('.about-product__slider').outerHeight();
+    
+      // Инициализация Slick слайдера
+      $('.about-product__slider').slick({
+        arrows: false,
         infinite: false,
-        variableWidth: true,
-        speed: 2000,
-        
-        autoplay: true,
-        autoplaySpeed: 6000
+        draggable: false,
+        swipe: false,
+        variableWidth: true
+      });
+    
+      // Функция для добавления горизонтального скролла
+      function addHorizontalScroll() {
+        $('.about-product__slider').on('wheel', function(e) {
+          var currentSlide = $('.about-product__slider').slick('slickCurrentSlide');
+    
+          if (!isScrolling) {
+            isScrolling = true;
+    
+            if (e.originalEvent.deltaY > 0) {
+              $('.about-product__slider').slick('slickNext');
+            } else {
+              $('.about-product__slider').slick('slickPrev');
+            }
+    
+            setTimeout(function() {
+              isScrolling = false;
+              if (isLastSlideReached) {
+                $('body').css('overflow', 'auto'); // Разблокировка прокрутки сайта
+              }
+            }, 1000); // Задержка, чтобы избежать слишком быстрой прокрутки
+          }
+    
+          e.preventDefault();
+        });
+      }
+    
+      // Добавление горизонтального скролла только к слайдеру
+      addHorizontalScroll();
+    
+      $('.about-product__slider').on('afterChange', function(event, slick, currentSlide) {
+        if (currentSlide === slick.slideCount - 1) {
+          isLastSlideReached = true;
+          $('.about-product__slider').off('wheel'); // Отключение горизонтального скролла
+          $('body').css('overflow', 'auto'); // Разблокировка прокрутки сайта
+        } else {
+          isLastSlideReached = false;
+          addHorizontalScroll(); // Добавление горизонтального скролла к слайдеру
+        }
+      });
+    
+      // Обновление слайдера при изменении размера окна
+      $(window).on('resize', function() {
+        $('.about-product__slider').slick('setPosition');
+      });
     });
+    
+    
+    
+   
+    
+    
+  ///-------------------------------------------------------------------
+    
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
    
 
  
