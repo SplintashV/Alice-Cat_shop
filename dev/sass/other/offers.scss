@@ -41,7 +41,7 @@
 
     &__items {
         margin: 0 auto;
-        max-width: 975px;
+        max-width: 800px;
 
         .col-lg-4{
             padding: 0;
@@ -128,21 +128,43 @@
         }
 
         .second-card {
-            width: 260px;
-            height: 478px;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url(assets/img/offers__second-card-back.png) center no-repeat;
-            background-size: 130%;
+            width: 360px;
+            height: 479px;
+            background: url(assets/img/offers__fourth-card-back.png) bottom no-repeat,
+            white;
+            background-size: 100%;
             transition: 2.5s;
-            margin-right: 40px;
+            
+            margin-left: 40px;
 
-            &:hover {
-                background-size: 150%;
+            
+            .card-title {
+                color: $primary-color;
+                max-width: 251px;
+
             }
 
             .card-descriptions {
-                max-width: 170px;
-                margin-bottom: 324px;
+                color: $primary-color;
+                max-width: 201px;
+                margin-bottom: 294px;
+            }
+
+            .card-link {
+                color: $primary-color;
+                
+
+            
+            }
+
+            &:hover{
+                .card-link{
+                    color: $primary-color;
+                    &::after{
+                        background-color: $primary-color;
+                        
+                    }
+                }
             }
 
 
