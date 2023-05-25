@@ -1,7 +1,8 @@
-.equipment{
+.equipment {
 
     margin-top: 150px;
-    &__title{
+
+    &__title {
         position: relative;
         max-width: 650px;
         font-family: $font-secondary;
@@ -11,12 +12,15 @@
         margin: 80px auto;
         text-transform: uppercase;
         color: $primary-color;
+        transform: translate(-390px, 0);
+        opacity: 0;
+        transition: all 0.9s ease 0s;
 
 
-        &::before{
+        &::before {
             content: "Что входит в набор?";
             position: absolute;
-            font-family: $font-primary; 
+            font-family: $font-primary;
             font-weight: 300;
             font-size: 20px;
             line-height: 24px;
@@ -25,10 +29,11 @@
             bottom: 65px;
             left: 147px;
         }
-        &::after{
+
+        &::after {
             content: "И почему мы любим то, что создаем";
             position: absolute;
-            font-family: $font-primary; 
+            font-family: $font-primary;
             font-weight: 300;
             font-size: 20px;
             line-height: 24px;
@@ -40,28 +45,55 @@
         }
     }
 
-    &__tablet{
+    &__title._active {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    &__tablet {
         justify-content: space-between;
         margin-bottom: 46px;
-        
-        .equipment-item{
+
+        //   transform: translate(-50%, 0);
+        //   opacity: 0;
+        //   transition: all 0.9s ease 0s;
+
+        .equipment-item {
             display: flex;
             align-items: center;
             flex-direction: column;
             padding: 10px;
-            
-            &__title{
+
+
+
+            &__title {
                 margin: 10px auto 50px;
-                
-                
+                transform: scale(0) translate(0, 50%);
+                transition: all 0.9s ease 0s;
+
             }
 
-            &__img{
+            &__title._active {
+                transform: translate(0, 0);
+                opacity: 1;
+                transform: scale(1);
+                transition: all 0.9s ease 0.3s;
+            }
+
+            &__img {
                 position: relative;
                 bottom: 102px;
+                transform: scale(0);
+                transition: all 0.9s ease 0s;
+
             }
 
-            &__description{
+            &__img._active {
+                transform: scale(1);
+
+            }
+
+            &__description {
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 140%;
@@ -69,12 +101,29 @@
                 color: $primary-color;
                 text-align: center;
                 margin-top: -70px;
+
+                transform: translate(0, 50%);
+                opacity: 0;
+                transition: all 0.3s ease 0s;
+
+            }
+
+            &__description._active {
+                transform: translate(0, 0);
+                opacity: 1;
+                transition: all 0.9s ease 0.5s;
             }
 
         }
+
+
     }
 
-    .btn-primary{
+    //&__tablet._active{
+    //     transform: translate(0 , 0);
+    //     opacity: 1;
+    // }
+    .btn-primary {
         padding: 15.5px 40px;
         font-family: $font-primary;
         font-weight: 500;
@@ -83,23 +132,25 @@
         color: $primary-color;
         margin: 0 auto;
         max-width: 152px;
-        
+
         display: block;
         text-align: center;
     }
-    &__border-img{
+
+    &__border-img {
         height: 2074px;
         width: 100%;
         margin-top: 42px;
         background: url(assets/img/equipment_bottom-img.png)center/cover no-repeat;
-        border-radius: 10% 10% 50% 50% / 0% 0% 20% 20% ;
+        border-radius: 10% 10% 50% 50% / 0% 0% 20% 20%;
     }
-    &__border-bottom{
+
+    &__border-bottom {
         height: 556px;
         width: 100%;
         margin-top: -1220px;
         margin-bottom: -230px;
         background: url(assets/img/catalog__border-top.png) center no-repeat;
         background-size: 100%;
-    }    
+    }
 }

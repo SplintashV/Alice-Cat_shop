@@ -10,6 +10,15 @@
         line-height: 68px;
         text-transform: uppercase;
         margin-bottom: 40px;
+        transform: translate(-390px , 0);
+        opacity: 0;
+        transition: all 0.9s ease 0s;
+
+    }
+
+    &__title._active{
+        transform: translate(0 , 0);
+        opacity: 1;
     }
 
     .accordion {
@@ -87,6 +96,10 @@
             color: $white;
             margin-left: 200px;
             margin-bottom: 20px;
+            transform: translate(-390px , 0);
+        opacity: 0;
+        transition: all 0.9s ease 0s;
+
 
             &-atr {
                 max-width: 219px;
@@ -97,10 +110,24 @@
                 color: $white;
                 margin-left: 325px;
                 margin-bottom: 40px;
+                transform: translate(-390px , 0);
+        opacity: 0;
+        transition: all 0.9s ease 0s;
 
 
             }
+            &-atr._active{
+                transform: translate(0 , 0);
+                opacity: 1;
+            }
         }
+
+        &__title._active{
+            transform: translate(0 , 0);
+            opacity: 1;
+        }
+
+
 
         .form-row {
             display: flex;

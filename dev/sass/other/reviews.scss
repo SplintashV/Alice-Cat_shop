@@ -16,7 +16,10 @@
     &__title{
         margin: -250px auto 0;
         max-width: 615px;
-        
+        transform: translate(-390px , 0);
+        opacity: 0;
+        transition: all 0.9s ease 0s;
+
 
         h2{
             font-family: $font-secondary;
@@ -47,6 +50,11 @@
             
         }
 
+    }
+
+    &__title._active{
+        transform: translate(0 , 0);
+        opacity: 1;
     }
 
     .circle_big{

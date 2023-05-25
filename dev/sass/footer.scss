@@ -11,6 +11,11 @@
         background-image: url(assets/img/footer__back-img.png);
 
         .footer__navbar {
+            transform: translate(-390px, 0);
+            opacity: 0;
+            transition: all 0.9s ease 0s;
+
+            
 
             &-title {
                 font-family: $font-secondary;
@@ -55,9 +60,20 @@
 
 
         }
-
+.footer__navbar._active{
+                transform: translate(0 , 0);
+                opacity: 1;
+            }
         .product-logo {
             margin-top: -100px;
+            transform: translate(0 , -90px);
+        opacity: 0;
+        transition: all 0.9s ease 0s;
+
+        }
+        .product-logo._active{
+            transform: translate(0 , 0);
+            opacity: 1;
         }
 
         .footer__contacts {
@@ -70,6 +86,16 @@
             text-transform: uppercase;
             padding-top: 40px;
 
+            transform: translate(390px , 0);
+        opacity: 0;
+        transition: all 0.9s ease 0s;
+
+
+        }
+
+        .footer__contacts._active{
+            transform: translate(0 , 0);
+            opacity: 1;
         }
 
         .legal-info {
@@ -81,6 +107,9 @@
             color: $primary-color;
             text-align: start;
             margin-top: 58px;
+            transform: translate(-190px , 30px);
+        opacity: 0;
+        transition: all 0.9s ease 0s;
 
 
             ul {
@@ -100,18 +129,34 @@
 
         }
 
+        .legal-info._active{
+            transform: translate(0 , 0);
+            opacity: 1;
+        }
+
         .social-links {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            a{
-              margin: 3px;
-              text-decoration: none;
-              
-              
-              
-          }
+
+            transform: translate(0 , 30px);
+        opacity: 0;
+        transition: all 0.9s ease 0s;
+
+
+            a {
+                margin: 3px;
+                text-decoration: none;
+
+
+
+            }
+        }
+
+        .social-links._active{
+            transform: translate(0 , 0);
+            opacity: 1;
         }
     }
 

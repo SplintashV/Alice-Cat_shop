@@ -20,6 +20,10 @@
         text-transform: uppercase;
         margin: 0 auto 30px auto;
         position: relative;
+        transform: translate(0 , -190px);
+        opacity: 0;
+        transition: all 0.9s ease 0s;
+
 
         &::before {
             content: "";
@@ -46,6 +50,11 @@
 
     }
 
+    &__title._active{
+      transform: translate(0 , 0);
+      opacity: 1;
+  }
+
     &__descreption {
         color: #FFFCF0;
         font-family: $font-primary;
@@ -56,8 +65,18 @@
         line-height: 24px;
         text-align: center;
         margin: 0 auto 40px auto;
+        transform: translate(0 , -190px);
+        opacity: 0;
+        transition: all 0.9s ease 0.0s;
+
 
     }
+
+    &__descreption._active{
+      transform: translate(0 , 0);
+      opacity: 1;
+      transition: all 0.9s ease 0.4s;
+  }
 
     .btn-primary {
         display: block;
@@ -68,7 +87,18 @@
         padding: 15px 40px;
         width: 195px;
         margin: 0 auto;
+
+        transform: translate(0 , -190px);
+        opacity: 0;
+        transition: all 0.9s ease 0s;
+
     }
+
+    .btn-primary._active{
+      transform: translate(0 , 0);
+      opacity: 1;
+      transition: all 0.9s ease 0.6s;
+  }
 
     @function random_range($min, $max) {
         $rand: random();

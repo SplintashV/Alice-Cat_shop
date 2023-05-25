@@ -11,6 +11,11 @@
         margin: 0 auto 25px;
         max-width: 615px;
         position: relative;
+        transform: translate(-390px , 0);
+        opacity: 0;
+        transition: all 0.9s ease 0s;
+
+
         &::before{
             position:absolute;
             content: "";
@@ -43,6 +48,11 @@
         }
     }
 
+    &__title._active{
+        transform: translate(0 , 0);
+        opacity: 1;
+    }
+
     .person-photo{
         padding-left: 40px;
     }
@@ -51,7 +61,16 @@
         position: relative;
         bottom: 82px;
         left: 362px;
+        transform: scale(0);
+       
+        transition: all 0.9s ease 0.0s;
     } 
+
+    .person-photo-atr._active{
+        
+        transform: scale(1);
+        transition: all 0.8s ease 1s;
+    }
     
     &__text{
         
